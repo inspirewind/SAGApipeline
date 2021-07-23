@@ -1,0 +1,100 @@
+Chlamydomonas reinhardtii	GCA_000002595.3
+Helicosporidium sp. ATCC 50920	GCA_000690575.1
+Coccomyxa sp. LA000219	GCA_000812005.1
+Trebouxia gelatinosa	GCA_000818905.1
+Picochlorum sp. SENEW3	GCA_000876415.1
+Coccomyxa sp. SUA001	GCA_001244535.1
+Cymbomonas tetramitiformis	GCA_001247695.1
+Auxenochlorella pyrenoidosa	GCA_001430745.1
+Gonium pectorale	GCA_001584585.1
+Coelastrella sp. M60	GCA_001630525.1
+Chlamydomonas applanata	GCA_001662365.1
+Chlamydomonas asymmetrica	GCA_001662385.1
+Chlamydomonas sphaeroides	GCA_001662425.1
+Botryococcus braunii	GCA_002005505.1
+Trebouxia sp. TZW2008	GCA_002118135.1
+Micractinium conductrix	GCA_002245815.2
+Dunaliella salina	GCA_002284615.2
+Scenedesmus quadricauda	GCA_002317545.1
+Chlamydomonas eustigma	GCA_002335675.1
+Coelastrella sp. UTEX B 3026	GCA_002588565.1
+Prototheca stagnorum	GCA_002794665.1
+Monoraphidium sp. 549	GCA_002814315.1
+Picochlorum sp. 'soloecismus'	GCA_002818215.1
+Tetrabaena socialis	GCA_002891735.1
+Chlorella sp. ArM0029B	GCA_002896455.3
+Prototheca cutis	GCA_002897115.2
+Chlorella sp. A99	GCA_003063905.1
+Yamagishiella unicocca	GCA_003116995.1
+Eudorina sp. 2006-703-Eu-15	GCA_003117195.1
+Chlorella sorokiniana	GCA_003130725.1
+Raphidocelis subcapitata	GCA_003203535.1
+Trebouxiophyceae sp. KSI-1	GCA_003568905.1
+Prototheca bovis	GCA_003612995.1
+Prototheca ciferrii	GCA_003613005.1
+Picocystis sp. ML	GCA_003665715.1
+Haematococcus lacustris	GCA_003970955.1
+Ulva prolifera	GCA_004138255.1
+Nannochloris sp. X1	GCA_004335555.1
+Nannochloris sp. RS	GCA_004335565.1
+Haematococcus sp. NG2	GCA_004335575.1
+Chloroidium sp. JM	GCA_004335615.1
+Chloroidium sp. CF	GCA_004335625.1
+Chloromonas sp. AAM2	GCA_004335635.1
+Dunaliella sp. WIN1	GCA_004335645.1
+Dunaliella sp. YS1	GCA_004335685.1
+Chlamydomonas sp. WS7	GCA_004335715.1
+Chlorella sp. KRBP	GCA_004335735.1
+Chlamydomonas sp. WS3	GCA_004335755.1
+Dunaliella sp. RO	GCA_004335775.1
+Chlamydomonas sp. 3222	GCA_004335795.1
+Scenedesmus sp. ARA3	GCA_004335835.1
+Characiochloris sp. AAM3	GCA_004335845.1
+Chlamydomonas sp. 3112	GCA_004335865.1
+Dunaliella sp. M2	GCA_004335885.1
+Chlamydomonas sp. AIC	GCA_004335895.1
+Scenedesmus sp. ARA	GCA_004335915.1
+Scenedesmus vacuolatus	GCA_004764505.1
+Tetraselmis striata	GCA_006384855.1
+Chlorella sp. Dachan	GCA_006782975.1
+Desmodesmus armatus	GCA_007449985.2
+Chloropicon primus	GCA_007859695.1
+Messastrum gracile	GCA_008037345.1
+Mychonastes homosphaera	GCA_009193075.1
+Picochlorum sp. BH-2019	GCA_009650465.1
+Chlorella vulgaris	GCA_009720205.1
+Chlorella sp. CH2018	GCA_009928355.1
+Stichococcus bacillaris	GCA_010646915.1
+Picochlorum sp. 'celeri'	GCA_010909725.1
+Picochlorum costavermella	GCA_011316045.1
+Ostreococcus mediterraneus	GCA_012295225.1
+Chlorella sp. BAC 9706	GCA_013372505.1
+Prasinococcaceae sp. CCMP 1430	GCA_013416795.1
+Chlamydomonas sp. ICE-L	GCA_013435795.1
+Scenedesmus sp. NREL 46B-D3	GCA_014080715.1
+Scenedesmus sp. PABB004	GCA_014905635.1
+Pycnococcus provasolii	GCA_015473125.1
+Parachlorella kessleri	GCA_015712045.1
+Chlamydomonas sp. UWO 241	GCA_016618255.1
+Chlamydomonas schloesseri	GCA_016834595.1
+Chlamydomonas incerta	GCA_016834605.1
+Edaphochlamys debaryana	GCA_016858145.1
+Prototheca wickerhamii	GCA_016906385.1
+Coelastrella sp. MACC-549	GCA_018290735.1
+Pyramimonas parkeae	GCA_018697155.1
+Chlorella desiccata (nom. nud.)	GCA_019044685.1
+Tetradesmus obliquus	GCA_900108755.1
+Bathycoccus sp. TOSAG39-1	GCA_900128745.1
+Ulva mutabilis	GCA_900538255.1
+Tetradesmus acuminatus	GCA_902809745.2
+Chlamydomonas reinhardtii	GCF_000002595.1
+Micromonas commoda	GCF_000090985.2
+Ostreococcus lucimarinus CCE9901	GCF_000092065.1
+Volvox carteri f. nagariensis	GCF_000143455.1
+Chlorella variabilis	GCF_000147415.1
+Micromonas pusilla CCMP1545	GCF_000151265.2
+Ostreococcus tauri	GCF_000214015.3
+Coccomyxa subellipsoidea C-169	GCF_000258705.1
+Monoraphidium neglectum	GCF_000611645.1
+Auxenochlorella protothecoides	GCF_000733215.1
+Bathycoccus prasinos	GCF_002220235.1
