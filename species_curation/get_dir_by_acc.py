@@ -13,6 +13,22 @@ def get_dir(acc : str):
 def get_fna(genome_path : str):
     pass
 
+def merge_fna(files : list, path) -> None:
+    merge_path = os.path.join(path, 'merge.txt')
+    with open(merge_path, 'w') as f:
+        for file in files:
+            single_fna_path = os.path.join(path, file)
+            for line in open(single_fna_path):
+                f.writelines(line)
+    f.close()
+
+def remove_merge(path):
+    merge_file  = os.path.join(path, 'merge.txt')
+    print("merge_remove!")
+    print(str(merge_file))
+    os.remove(merge_file)
+
+
 def fna_files_stat(data_path):
     dic = {}
     workbook = xlwt.Workbook(encoding = 'utf-8')
@@ -36,6 +52,8 @@ def fna_files_stat(data_path):
             if 'fna' in str(file):
                 fna_lis.append(file)
         worksheet.write(i, 2, label = str(fna_lis))
+        # merge_fna(fna_lis, top)
+        remove_merge(top)
 
         # write protein.faa -> 3
         if 'faa' not in str(files):
@@ -50,13 +68,13 @@ def fna_files_stat(data_path):
             worksheet.write(i, 4, label = 'genomic.gbff')
 
         # write genomic.gff -> 5
-        if 'faa' not in str(files):
+        if 'gff' not in str(files):
             worksheet.write(i, 5, label = 'NO gff')
         else:
             worksheet.write(i, 5, label = 'genomic.gff')
 
         # write genomic.gtf -> 6
-        if 'faa' not in str(files):
+        if 'gtf' not in str(files):
             worksheet.write(i, 6, label = 'NO gtf')
         else:
             worksheet.write(i, 6, label = 'genomic.gtf')
