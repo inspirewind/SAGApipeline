@@ -22,7 +22,9 @@ with open('species_for_examine.txt', 'r') as sp:
 with open('good_species.txt', 'w') as out:
     for name, acc in species.items():
         if has_two_word(name) and exclude_sp(name):
-            out.writelines(name + '; ' + with_dir(acc))
+            final_path = name + '; ' + with_dir(acc).replace('\n', '') + '\merge.fna' + '\n'
+            dir_for_linux = final_path.replace("\\", "/").replace('D:', '~')
+            out.writelines(dir_for_linux)
 
 # for i in species:
 #     if len(i.split(' ')) == 2:

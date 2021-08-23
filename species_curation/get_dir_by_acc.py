@@ -1,7 +1,7 @@
 import os
 import xlrd, xlwt
 
-data_path = r'D:\plantdatabase\plants_genome_new\Chlorophyta\ncbi_dataset\data'
+data_path = r'D:\plants_genome_new\Chlorophyta\ncbi_dataset\data'
 
 def data_path_passer():
     return data_path
@@ -14,7 +14,7 @@ def get_fna(genome_path : str):
     pass
 
 def merge_fna(files : list, path) -> None:
-    merge_path = os.path.join(path, 'merge.txt')
+    merge_path = os.path.join(path, 'merge.fna')
     with open(merge_path, 'w') as f:
         for file in files:
             single_fna_path = os.path.join(path, file)
@@ -53,7 +53,7 @@ def fna_files_stat(data_path):
                 fna_lis.append(file)
         worksheet.write(i, 2, label = str(fna_lis))
         # merge_fna(fna_lis, top)
-        remove_merge(top)
+        # remove_merge(top)
 
         # write protein.faa -> 3
         if 'faa' not in str(files):
