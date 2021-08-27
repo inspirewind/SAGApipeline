@@ -4,3 +4,4 @@ files_stat.xls
 files_stat.xls
 .vscode/settings.json
 files_stat.xls
+*.pyc

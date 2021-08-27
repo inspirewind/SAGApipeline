@@ -1,3 +1,6 @@
+from os import path
+
+
 species = {}
 
 # only using this method can screen well
@@ -17,12 +20,15 @@ def with_dir(acc : str):
 
 with open('species_for_examine.txt', 'r') as sp:
     for line in sp:
-        species[(line.split('\t')[0])] = line.split('\t')[1]
+        species[line.split(';')[0]] = (line.split(';')[1].replace(' ', ''))
+
+# print(path_lis)
 
 with open('good_species.txt', 'w') as out:
-    for name, acc in species.items():
+    for name in species:
         if has_two_word(name) and exclude_sp(name):
-            final_path = name + '; ' + with_dir(acc).replace('\n', '') + '\merge.fna' + '\n'
+            final_path = name + '; ' +  str(species[name]).replace('\n', '') + '\merge.fna' + '\n'
+
             dir_for_linux = final_path.replace("\\", "/").replace('D:', '~')
             out.writelines(dir_for_linux)
 

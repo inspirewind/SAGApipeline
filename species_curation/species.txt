@@ -1,0 +1,5 @@
+Scenedesmus vacuolatus; ~/plants_genome_new/all/GCA_004764505.1/merge.fna
+Raphidocelis subcapitata; ~/plants_genome_new/all/GCA_003203535.1/merge.fna
+Bathycoccus prasinos; ~/plants_genome_new/all/GCF_002220235.1/merge.fna
+Chlamydomonas reinhardtii; ~/plants_genome_new/all/GCA_000002595.3/merge.fna
+Chlamydomonas schloesseri; ~/plants_genome_new/all/GCA_016834595.1/merge.fna
