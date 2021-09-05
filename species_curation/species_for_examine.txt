@@ -1,5 +1,0 @@
-Scenedesmus vacuolatus; D:\plants_genome_new\all\GCA_004764505.1
-Raphidocelis subcapitata; D:\plants_genome_new\all\GCA_003203535.1
-Bathycoccus prasinos; D:\plants_genome_new\all\GCF_002220235.1
-Chlamydomonas reinhardtii; D:\plants_genome_new\all\GCA_000002595.3
-Chlamydomonas schloesseri; D:\plants_genome_new\all\GCA_016834595.1

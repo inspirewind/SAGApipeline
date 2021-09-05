@@ -17,3 +17,6 @@ def get_merge_lis(path):
                 fna_lis.append(file)
     return fna_lis
 
+def cat_merge():
+    
+    os.system("cat *.fna > merge.fna")

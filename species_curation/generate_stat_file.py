@@ -1,11 +1,7 @@
 import os
 import xlrd, xlwt
 
-data_path = r'D:\plants_genome_new\Chlorophyta\ncbi_dataset\data'
-
-def data_path_passer():
-    return data_path
-
+data_path = r'E:\plants_genome_new\all'
 
 
 def get_fna(genome_path : str):
@@ -80,7 +76,7 @@ def fna_files_stat(data_path):
 
     workbook.save('files_stat.xls')
 
-# fna_files_stat(data_path)
+fna_files_stat(data_path)
 
     
 
