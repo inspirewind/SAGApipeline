@@ -5,3 +5,5 @@ files_stat.xls
 .vscode/settings.json
 files_stat.xls
 *.pyc
+species_curation/bam_stat.tsv
+species_curation/data_summary_merge.tsv
