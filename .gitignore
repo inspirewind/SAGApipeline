@@ -7,3 +7,5 @@ files_stat.xls
 *.pyc
 species_curation/bam_stat.tsv
 species_curation/data_summary_merge.tsv
+uniport/uniprot_index.tsv
+uniport/uniprot_index_silly.tsv
