@@ -12,7 +12,7 @@ class os_resolver:
     pass
 
 class blast_resolver:
-    @timer.timeit
+    # @timer.timeit
     def __init__(self, blast) -> None:
         self.os_lis = []
         self.blastdb = {}
