@@ -11,3 +11,4 @@ uniport/uniprot_index.tsv
 uniport/uniprot_index_silly.tsv
 *.blast
 *.txt
+*.tsv
