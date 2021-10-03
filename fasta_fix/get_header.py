@@ -2,11 +2,10 @@ from typing import Counter
 import time
 import os
 
+#double Name, Common_Name, Organism_Qualifier, Tax_id, Assembly_Name, Assembly_acc
+report_all = r'C:\Users\lr201\code\gene_prediction_pipeline\data_summary.tsv'
 genomes_top = r'D:\plantdatabase\plants_genome_new\all'
 bams_top = r'D:\plantdatabase\BAMs'
-
-#double Name    Common Name Organism_Qualifier  Taxonomy_id	Assembly_Name   Assembly Accession	Source	Annotation	Level	Contig N50	Size	Submission Date	Gene Count	BioProject	BioSample
-report_all = r'C:\Users\lr201\code\gene_prediction_pipeline\data_summary.tsv'
 
 def get_bams(top : str) -> list:
     bams_path = os.listdir(top)
@@ -41,36 +40,77 @@ def indexing(bams : list, index : dict) -> dict:
                 print("dup!!!!!!!!!!")
     return scr
 
-def create_working_dir(index : dict, genomes_top : str, bams_top : str) -> None:
-    pass
+def src_genome(scr : dict) -> list:
+    src_genome = []
+    for name, acc in scr.items():
+        src_genome.append(acc)
+    return src_genome
+
+
+def genome_stat(top : str, genomes : list) -> None:
+    with open('genome_stat.txt', 'w') as out:
+        for genome in genomes:
+            path = os.path.join(top, genome, 'merge.fna')
+
+            header = []
+            big_str_len = 0.0
+            with open(path) as f:
+                for line in f:
+                    if line.startswith('>'):
+                        header.append(line.split(' ')[0])
+                    else:
+                        big_str_len += len(line.replace('\n', ''))
+            hdic = dict(Counter(header))
+            dup_lis = [key for key, value in hdic.items() if value > 1] 
+            dup_dic = {key : value for key, value in hdic.items() if value > 1} 
+
+            if dup_lis == [] and dup_dic == {}:
+                print(genome + ": passed!\t", end = '')
+                print("contigs: " + str(len(header)) + "\tavg_len: " + str(big_str_len / len(header)))
+                out.writelines(genome + ": passed!\t")
+                out.writelines("contigs: " + str(len(header)) + "\tavg_len: " + str(big_str_len / len(header)) + '\n')
+            else:
+                out.writelines(genome + ': failed!')
+
+def create_working_dir(index : dict, genomes_top : str, bams_top : str, genomes : list, bams : list, out_dir : str) -> None:
+    for name, acc in index.items():
+        if name in bams:
+            bam_dir = os.path.join(bams_top, str(name).replace(' ', '_'), 'VARUS.bam')
+            genome_dir = os.path.join(genomes_top, acc, 'merge.fna')
+            wdir = os.path.join(out_dir, acc)
+
+            os.mkdir(wdir)
+            if os.path.exists(bam_dir):
+                os.system("copy %s %s" % (bam_dir, os.path.join(wdir, 'VARUS.bam')))
+                if os.path.exists(os.path.join(wdir, 'VARUS.bam')):
+                    print(name + ": BAM copy succeeded")
+                else:
+                    print(name + ": BAM copy failed")
+            else:
+                print(name + ": BAM failed")
+
+            if os.path.exists(genome_dir):
+                os.system("copy %s %s" % (genome_dir, os.path.join(wdir, 'merge.fna')))
+                if os.path.exists(os.path.join(wdir, 'merge.fna')):
+                    print(name + ": genome copy succeeded")
+                else:
+                    print(name + ": genome copy failed")
+            else:
+                print(name + ": genome failed")
+
+    
+    
+
+
 
 genomes = get_genomes(genomes_top)
 bams = get_bams(bams_top)
 index = build_index(report_all)
-print(index)
+# print(index)
+# create_working_dir(index, genomes_top, bams_top, genomes, bams, r'D:\working_dir')
+# print(genomes)
 scr = indexing(bams, index)
-print(len(scr))
+src_genome = src_genome(scr)
+print(src_genome)
 
-# print(bams)
-# print(len(bams))
-# print(genomes_path)
-
-
-
-
-for genome in genomes:
-    path = os.path.join(genomes_top, genome, 'merge.faa')
-
-    header = []
-    with open(path) as f:
-        for line in f:
-            if line.startswith('>'):
-                header.append(line.split(' ')[0])
-
-for i in header:
-    print(i)
-
-hdic = dict(Counter(header))
-print(hdic)
-print ([key for key,value in hdic.items()if value > 1])  
-print ({key:value for key,value in hdic.items()if value > 1}) 
+# genome_stat(genomes_top, genomes)
