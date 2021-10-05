@@ -1,6 +1,7 @@
 from typing import Counter
 import time
 import os
+import header_fixer
 
 #double Name, Common_Name, Organism_Qualifier, Tax_id, Assembly_Name, Assembly_acc
 report_all = r'C:\Users\lr201\code\gene_prediction_pipeline\data_summary.tsv'
@@ -90,27 +91,41 @@ def create_working_dir(index : dict, genomes_top : str, bams_top : str, genomes 
                 print(name + ": BAM failed")
 
             if os.path.exists(genome_dir):
-                os.system("copy %s %s" % (genome_dir, os.path.join(wdir, 'merge.fna')))
-                if os.path.exists(os.path.join(wdir, 'merge.fna')):
-                    print(name + ": genome copy succeeded")
-                else:
-                    print(name + ": genome copy failed")
+                # fix header
+                fx = header_fixer.fixer()
+                fx.fix_contig_name(genome_dir, genome_dir.replace('merge.fna', 'merge_fix.fna'))
+                print("header fixed!")
+
+                os.system("copy %s %s" % (genome_dir.replace('merge.fna', 'merge_fix.fna'), os.path.join(wdir, 'merge_fix.fna')))
+                # if os.path.exists(os.path.join(wdir, 'merge.fna')):
+                #     print(name + ": genome copy succeeded")
+                # else:
+                #     print(name + ": genome copy failed")
             else:
                 print(name + ": genome failed")
 
-    
-    
-
-
+def header_map(genomes_top : str, genomes : list) -> None:
+    with open(r'header_map.txt', 'w') as out:
+        for genome in genomes:
+            gen_path = os.path.join(genomes_top, genome, 'merge.fna')
+            # print(gen_path)    
+            if os.path.exists(gen_path):
+                with open(gen_path) as f:
+                    for line in f:
+                        if line.startswith('>'):
+                            out.writelines(line)
+        out.writelines('\n')
+    pass
 
 genomes = get_genomes(genomes_top)
 bams = get_bams(bams_top)
 index = build_index(report_all)
-# print(index)
-# create_working_dir(index, genomes_top, bams_top, genomes, bams, r'D:\working_dir')
-# print(genomes)
 scr = indexing(bams, index)
-src_genome = src_genome(scr)
-print(src_genome)
+scr_genome = src_genome(scr)
 
-# genome_stat(genomes_top, genomes)
+# genome_stat(genomes_top, scr_genome)
+# header_map(genomes_top, scr_genome)
+
+create_working_dir(index, genomes_top, bams_top, genomes, bams, r'D:\working_dir_header_fix')
+
+

@@ -1,14 +1,8 @@
 
-seq.fna
-files_stat.xls
-files_stat.xls
+*.fna
+*.xls
 .vscode/settings.json
-files_stat.xls
 *.pyc
-species_curation/bam_stat.tsv
-species_curation/data_summary_merge.tsv
-uniport/uniprot_index.tsv
-uniport/uniprot_index_silly.tsv
 *.blast
 *.txt
 *.tsv
