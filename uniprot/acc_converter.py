@@ -8,7 +8,7 @@ class acc_converter:
         self.db = db
         self.db_seq = {}
 
-    @timer.timeit
+    # @timer.timeit
     def makedb(self, output = False):
         with open(self.db) as f:
             # >tr|A0A2P6V1S1|A0A2P6V1S1_9CHLO Sodium potassium calcium exchanger 1 isoform X5 OS=Micractinium conductrix OX=554055 GN=C2E20_8329 PE=3 SV=1
@@ -30,7 +30,7 @@ class acc_converter:
     def get_os(self, acc):
         return self.db_seq[acc]
 
-    @timer.timeit
+    # @timer.timeit
     def get_os_by_traverse(self, acc):
         # maybe faster when inquiry single seq
         with open(self.db) as f:

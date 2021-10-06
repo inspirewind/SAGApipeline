@@ -1,6 +1,4 @@
 from os import path
-
-
 species = {}
 
 # only using this method can screen well

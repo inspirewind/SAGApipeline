@@ -19,7 +19,7 @@ class blast_resolver:
         self.osdb = {}
         self.blast = blast
 
-    @timer.timeit
+    # @timer.timeit
     def make_blastdb(self, output = False):
         # lcl|NC_005353.1_prot_NP_958375.1_1	tr|A0A6C0RXD1|A0A6C0RXD1_9CHLO	99.201	751	6	0	1	751	1	751	0.0	1520
         # query_acc; subject_acc; identity; ali_len; mismatches; gap opens; q.start; q.end; s.start; s.end; e-value; bit_score
@@ -68,7 +68,7 @@ class blast_resolver:
         # TODO: three list or more to output
         pass
 
-    @timer.timeit
+    # @timer.timeit
     def make_osdb(self, os_lis = [], prdb = None, output = False):
         # list for indpecting pr_os name, then write to file
         # ins_set = set()
