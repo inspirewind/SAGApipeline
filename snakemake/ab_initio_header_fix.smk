@@ -10,14 +10,14 @@ GEN_INDEX = ['GCA_019155205.1', 'GCF_000733215.1', 'GCA_001430745.1', 'GCF_00222
 'GCA_900538255.1', 'GCA_004138255.1', 'GCA_003116995.1']
 rule all:
     input:
-        expand("genome/{gen}/braker/", gen=GEN_INDEX)
+        expand("working_dir_header_fix/{gen}/braker2/", gen=GEN_INDEX)
 
 rule braker2:
     input:
-        "genome/{gen}/merge.fna"
+        "working_dir_header_fix/{gen}/merge_fix.fna"
     output:
-        "genome/{gen}/braker/"
+        "working_dir_header_fix/{gen}/braker2/"
     threads: 8
     shell:
-        "braker.pl --genome={input} --esmode --softmasking --cores {threads} --workingdir=genome/{wildcards.gen}/braker"
+        "braker.pl --genome={input} --esmode --min_contig=10000 --skipAllTraining -species=chlamydomonas --cores {threads} --workingdir=working_dir_header_fix/{wildcards.gen}/braker2"
 
