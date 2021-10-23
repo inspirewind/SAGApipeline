@@ -48,30 +48,64 @@ def src_genome(scr : dict) -> list:
     return src_genome
 
 
-def genome_stat(top : str, genomes : list) -> None:
-    with open('genome_stat.txt', 'w') as out:
-        for genome in genomes:
-            path = os.path.join(top, genome, 'merge.fna')
+def genome_stat(top : str, genomes : list, output = False) -> None:
+    genome_stat_lis = []
+    
+    for genome in genomes:
+        path = os.path.join(top, genome, 'merge.fna')
+        headers = []
+        header_len_lis = []
+        big_str_len = 0.0
 
-            header = []
-            big_str_len = 0.0
-            with open(path) as f:
-                for line in f:
-                    if line.startswith('>'):
-                        header.append(line.split(' ')[0])
-                    else:
-                        big_str_len += len(line.replace('\n', ''))
-            hdic = dict(Counter(header))
-            dup_lis = [key for key, value in hdic.items() if value > 1] 
-            dup_dic = {key : value for key, value in hdic.items() if value > 1} 
+        with open(path) as f:
+            header_len = 0
+            for line in f:
+                if line.startswith('>'):
+                    header_len_lis.append(header_len)
+                    header_len = 0
+                    headers.append(line.split(' ')[0])
+                else:
+                    big_str_len += len(line.replace('\n', ''))
+                    header_len += len(line.replace('\n', ''))
+        del(header_len_lis[0])
 
-            if dup_lis == [] and dup_dic == {}:
-                print(genome + ": passed!\t", end = '')
-                print("contigs: " + str(len(header)) + "\tavg_len: " + str(big_str_len / len(header)))
-                out.writelines(genome + ": passed!\t")
-                out.writelines("contigs: " + str(len(header)) + "\tavg_len: " + str(big_str_len / len(header)) + '\n')
-            else:
-                out.writelines(genome + ': failed!')
+        #test contig dup
+        hdic = dict(Counter(headers))
+        dup_lis = [key for key, value in hdic.items() if value > 1] 
+        dup_dic = {key : value for key, value in hdic.items() if value > 1} 
+        avg_len = float(big_str_len) / float(len(headers))
+
+        if dup_lis == [] and dup_dic == {}:
+            genome_stat_lis.append((genome, len(headers), avg_len, max(header_len_lis), min(header_len_lis)))
+        else:
+            print(genome + ': failed!')
+
+        genome_stat_lis = sorted(genome_stat_lis, key = lambda x : x[2], reverse = True)
+        # print(genome_stat_lis)
+
+    if output:
+        long_mi = []
+        short_mi = []
+        with open('genome_stat.txt', 'w') as out:
+            for genome_pair in genome_stat_lis:
+                genome = genome_pair[0]
+                contigs = genome_pair[1]
+                avg_len = genome_pair[2]
+                max_len = genome_pair[3]
+                min_len = genome_pair[4]
+
+                if avg_len > 1e5:
+                    long_mi.append(genome)
+                else:
+                    short_mi.append(genome)
+
+                print(genome, end = '')
+                print("\tcontigs: " + str(contigs) + "\tavg_len: " + str(avg_len))
+                out.writelines(genome)
+                out.writelines("\tcontigs: " + str(contigs) + "\tavg_len: " + str(avg_len))
+                out.writelines("\tmax = " + str(max_len) + "\tmin =  " + str(min_len) + '\n')
+        print(long_mi)
+        print(short_mi)
 
 def create_working_dir(index : dict, genomes_top : str, bams_top : str, genomes : list, bams : list, out_dir : str) -> None:
     for name, acc in index.items():
@@ -123,9 +157,9 @@ index = build_index(report_all)
 scr = indexing(bams, index)
 scr_genome = src_genome(scr)
 
-# genome_stat(genomes_top, scr_genome)
+genome_stat(genomes_top, scr_genome, output = True)
 # header_map(genomes_top, scr_genome)
 
-create_working_dir(index, genomes_top, bams_top, genomes, bams, r'D:\working_dir_header_fix')
+# create_working_dir(index, genomes_top, bams_top, genomes, bams, r'D:\working_dir_header_fix')
 
 
