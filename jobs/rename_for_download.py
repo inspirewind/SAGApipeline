@@ -10,6 +10,9 @@ class name_fixer():
         self.top = top
         self.genomes = os.listdir(top)
         # print(self.genomes)
+    
+    def rename(self, file : str) -> None:
+        pass
 
     def aa_in_braker_rename(self):
         if os.name == 'posix':
@@ -28,7 +31,7 @@ class name_fixer():
             print(bu_summary)
             # os.system('mv short_summary.specific.chlorophyta_odb10.GCA_008729055.1_augustus.ab_initio.aa.busco.txt')
     
-    def braker_log_rename(self):
+    def rename_raker_log(self):
         if os.name == 'posix':
             print("os.name is posix, can be performed")
             for genome in self.genomes:

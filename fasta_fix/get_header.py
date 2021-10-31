@@ -151,15 +151,23 @@ def header_map(genomes_top : str, genomes : list) -> None:
         out.writelines('\n')
     pass
 
-genomes = get_genomes(genomes_top)
-bams = get_bams(bams_top)
-index = build_index(report_all)
-scr = indexing(bams, index)
-scr_genome = src_genome(scr)
 
-genome_stat(genomes_top, scr_genome, output = True)
-# header_map(genomes_top, scr_genome)
+def main():
+    genomes = get_genomes(genomes_top)
+    bams = get_bams(bams_top)
+    index = build_index(report_all)
+    scr = indexing(bams, index)
+    scr_genome = src_genome(scr)
 
-# create_working_dir(index, genomes_top, bams_top, genomes, bams, r'D:\working_dir_header_fix')
+    genome_stat(genomes_top, scr_genome, output = True)
+
+
+if __name__ == '__main__':
+    main()
+    # header_map(genomes_top, scr_genome)
+
+    # create_working_dir(index, genomes_top, bams_top, genomes, bams, r'D:\working_dir_header_fix')
+
+
 
 
