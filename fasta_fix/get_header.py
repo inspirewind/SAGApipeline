@@ -47,12 +47,24 @@ def src_genome(scr : dict) -> list:
         src_genome.append(acc)
     return src_genome
 
+def stat_by_len(stat_len_lis : list, header_len_lis : list) -> dict:
+    # init len_dict
+    len_dict = {}
+    for i in stat_len_lis:
+        len_dict[i] = []
 
-def genome_stat(top : str, genomes : list, output = False) -> None:
+    for stat_len in stat_len_lis:
+        for header_len in header_len_lis:
+            if header_len <= stat_len:
+                len_dict[stat_len].append(header_len)
+
+    return len_dict
+
+def genome_stat(top : str, genomes : list, fna_file : str, output = False) -> None:
     genome_stat_lis = []
     
     for genome in genomes:
-        path = os.path.join(top, genome, 'merge.fna')
+        path = os.path.join(top, genome, fna_file)
         headers = []
         header_len_lis = []
         big_str_len = 0.0
@@ -76,7 +88,7 @@ def genome_stat(top : str, genomes : list, output = False) -> None:
         avg_len = float(big_str_len) / float(len(headers))
 
         if dup_lis == [] and dup_dic == {}:
-            genome_stat_lis.append((genome, len(headers), avg_len, max(header_len_lis), min(header_len_lis)))
+            genome_stat_lis.append((genome, len(headers), avg_len, header_len_lis))
         else:
             print(genome + ': failed!')
 
@@ -84,28 +96,24 @@ def genome_stat(top : str, genomes : list, output = False) -> None:
         # print(genome_stat_lis)
 
     if output:
-        long_mi = []
-        short_mi = []
         with open('genome_stat.txt', 'w') as out:
             for genome_pair in genome_stat_lis:
                 genome = genome_pair[0]
                 contigs = genome_pair[1]
                 avg_len = genome_pair[2]
-                max_len = genome_pair[3]
-                min_len = genome_pair[4]
+                header_len_lis = genome_pair[3]
 
-                if avg_len > 1e5:
-                    long_mi.append(genome)
-                else:
-                    short_mi.append(genome)
+                len_lis = [200, 500, 1000, 5000, 10000]
+                len_dict = stat_by_len(len_lis, header_len_lis)
 
                 print(genome, end = '')
                 print("\tcontigs: " + str(contigs) + "\tavg_len: " + str(avg_len))
                 out.writelines(genome)
                 out.writelines("\tcontigs: " + str(contigs) + "\tavg_len: " + str(avg_len))
-                out.writelines("\tmax = " + str(max_len) + "\tmin =  " + str(min_len) + '\n')
-        print(long_mi)
-        print(short_mi)
+                # out.writelines("\tmax = " + str(max_len) + "\tmin =  " + str(min_len))
+                out.writelines(str(len_dict) + '\n')
+
+
 
 def create_working_dir(index : dict, genomes_top : str, bams_top : str, genomes : list, bams : list, out_dir : str) -> None:
     for name, acc in index.items():
@@ -149,7 +157,6 @@ def header_map(genomes_top : str, genomes : list) -> None:
                         if line.startswith('>'):
                             out.writelines(line)
         out.writelines('\n')
-    pass
 
 
 def main():
@@ -159,7 +166,7 @@ def main():
     scr = indexing(bams, index)
     scr_genome = src_genome(scr)
 
-    genome_stat(genomes_top, scr_genome, output = True)
+    genome_stat(top = genomes_top, genomes = scr_genome, fna_file = 'merge.fna', output = True)
 
 
 if __name__ == '__main__':
