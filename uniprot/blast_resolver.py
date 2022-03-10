@@ -114,9 +114,9 @@ class blast_resolver:
 
 
 if __name__ == '__main__':
-    br = blast_resolver(r'D:\plantdatabase\Uniprot\fmt_6_Ch_re_protein.blast')
+    br = blast_resolver(r'D:/plantdatabase/Uniprot/fmt_6_Ch_re_protein.blast')
     br.make_blastdb()
-    br.os_reader(r'C:\Users\lr201\code\gene_prediction_pipeline\uniport\os.txt')
+    br.os_reader(r'os.txt')
     br.make_osdb(prdb = r'D:\plantdatabase\Uniprot\uniprot-reviewed_no+taxonomy_3041.fasta', output = True)
 
     # print("without_sp_and_than_two: " + str(without_sp_and_more_than_two))

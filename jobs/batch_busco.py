@@ -1,8 +1,8 @@
 import os
 
-aa_top = r'/mnt/d/plantdatabase/Uniprot/aa_rec'
+aa_top = r'/mnt/d/com_esmode/protein'
 aa_lis = os.listdir(aa_top)
-busco_rec = r'/mnt/d/plantdatabase/Uniprot/busco_rec'
+busco_rec = r'/mnt/d/com_esmode/protein/busco_rec'
 
 if os.name == 'posix':
     print("os.name is posix, can be performed")

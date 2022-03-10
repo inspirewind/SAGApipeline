@@ -53,7 +53,7 @@ def verify(evalue_db : dict):
 
 
 def main():
-    pre_blastdb = make_pre_blast_db(r'D:\__wsl\gene_pre_2109\snakemake\new_sel\dia_013435795_pre_6_92.tsv')
+    pre_blastdb = make_pre_blast_db(r'D:/plantdatabase/Uniprot/fmt_6_Ch_re_protein.blast')
     evalue_db = get_best_evalue(pre_blastdb)
     verify(evalue_db)
 

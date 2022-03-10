@@ -51,12 +51,12 @@ def stat_by_len(stat_len_lis : list, header_len_lis : list) -> dict:
     # init len_dict
     len_dict = {}
     for i in stat_len_lis:
-        len_dict[i] = []
+        len_dict[i] = 0
 
     for stat_len in stat_len_lis:
         for header_len in header_len_lis:
             if header_len <= stat_len:
-                len_dict[stat_len].append(header_len)
+                len_dict[stat_len] += 1
 
     return len_dict
 
@@ -103,7 +103,7 @@ def genome_stat(top : str, genomes : list, fna_file : str, output = False) -> No
                 avg_len = genome_pair[2]
                 header_len_lis = genome_pair[3]
 
-                len_lis = [200, 500, 1000, 5000, 10000]
+                len_lis = [1000, 2000, 5000, 10000, 20000, 50000]
                 len_dict = stat_by_len(len_lis, header_len_lis)
 
                 print(genome, end = '')
