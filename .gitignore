@@ -1,0 +1,13 @@
+
+*.fna
+*.xls
+.vscode/
+*.pyc
+*.blast
+*.txt
+*.tsv
+*.zip
+.RData
+.Rhistory
+sel_Rhodophyta/
+Euglenida_3035/

@@ -1,0 +1,1 @@
+# resolve how many nodes are avaliable from "scontrol show node" 

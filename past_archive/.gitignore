@@ -1,9 +1,0 @@
-
-*.fna
-*.xls
-.vscode/settings.json
-*.pyc
-*.blast
-*.txt
-*.tsv
-*.zip
