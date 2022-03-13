@@ -29,11 +29,11 @@ def select_lineage(taxid):
     print(dir_name + ' ' + str(len(select_ass_lis)))
     print(select_ass_lis)
 
-    # os.makedirs(os.path.join(rec_top, dir_name))
-    # for ass in select_ass_lis:
-    #     source_path = os.path.join(r'/mnt/d/new_ncbi_dataset/genomes_rec', get_full(taxid), ass)
-    #     dis_path = os.path.join(rec_top, dir_name, ass)
-    #     shutil.copytree(source_path, dis_path)
+    os.makedirs(os.path.join(rec_top, dir_name))
+    for ass in select_ass_lis:
+        source_path = os.path.join(r'/mnt/d/new_ncbi_dataset/genomes_rec', parse_full_lineage(taxid), ass)
+        dis_path = os.path.join(rec_top, dir_name, ass)
+        shutil.copytree(source_path, dis_path)
     
 
-select_lineage(2825)
+select_lineage(38254)

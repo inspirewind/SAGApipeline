@@ -1,6 +1,5 @@
 {
-    "python.pythonPath": "C:\\Program Files\\Python37\\python.exe",
-    "workbench.colorTheme": "Material Theme High Contrast",
+    "workbench.colorTheme": "Default Dark+",
     "cSpell.words": [
         "fasta"
     ]
