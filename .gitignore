@@ -11,3 +11,8 @@
 .Rhistory
 sel_Rhodophyta/
 Euglenida_3035/
+*.log
+test/GCA_000091205.1/augustus.hints.aa
+*.gz
+*.csv
+*.xlsx

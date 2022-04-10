@@ -36,4 +36,4 @@ def select_lineage(taxid):
         shutil.copytree(source_path, dis_path)
     
 
-select_lineage(38254)
+select_lineage(2870)

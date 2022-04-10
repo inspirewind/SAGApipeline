@@ -15,8 +15,6 @@ def busco_resolver(busco_summary) -> list:
 def get_busco_count(res_lis) -> float:
     return (float(res_lis[6]) + float(res_lis[9])) / float(res_lis[11])
 
-
-
 def get_gene_num(pred_aa):
     seq_dic = SeqIO.to_dict(SeqIO.parse(pred_aa, 'fasta'))
     return len(seq_dic)
@@ -30,7 +28,7 @@ def get_interproscan_item_num(ips_tsv):
     return line_num
 
 def get_running_time(snakemake_dic : dict, ass, rule) -> int:
-    # {jobid : rule, input_ass, start_date_parse, finish_date_parse}
+    # {jobid : (rule, input_ass, start_date_parse, finish_date_parse)}
     for job, info in snakemake_dic.items():
         if ass in info[1] and info[0] == rule:
             return str((info[3] - info[2]).total_seconds())

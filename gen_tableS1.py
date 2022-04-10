@@ -1,5 +1,3 @@
-from lib2to3.pgen2.pgen import generate_grammar
-from mailbox import linesep
 import os
 from assembly_stat import get_genome_size
 
