@@ -2,18 +2,8 @@ import re
 from Bio import SeqIO
 
 from snakemake_job_parser import log2dic
+import busco_resolver
 
-def busco_resolver(busco_summary) -> list:
-    busco_summary_str = ''
-    with open(busco_summary) as bf:
-        for line in bf:
-            busco_summary_str += line
-    busco_summary_re = re.compile(r'C:(.+)%\[S:(.+)%,D:(.+)%\],F:(.+)%,M:(.+)%,n:(\d+).+\n\t(\d+)\tComplete BUSCOs \(C\)\t\t\t   \n\t(\d+)\tComplete and single-copy BUSCOs \(S\)\t   \n\t(\d+)\tComplete and duplicated BUSCOs \(D\)\t   \n\t(\d+)\tFragmented BUSCOs \(F\)\t\t\t   \n\t(620)\tMissing BUSCOs \(M\)\t\t\t   \n\t(\d+)\tTotal BUSCO groups searched\t\t   \n')
-    res_lis = busco_summary_re.findall(busco_summary_str)
-    return res_lis[0]
-
-def get_busco_count(res_lis) -> float:
-    return (float(res_lis[6]) + float(res_lis[9])) / float(res_lis[11])
 
 def get_gene_num(pred_aa):
     seq_dic = SeqIO.to_dict(SeqIO.parse(pred_aa, 'fasta'))
@@ -33,7 +23,7 @@ def get_running_time(snakemake_dic : dict, ass, rule) -> int:
         if ass in info[1] and info[0] == rule:
             return str((info[3] - info[2]).total_seconds())
 
-def blast_resolver():
+def get_matches_num():
     pass
 
 
