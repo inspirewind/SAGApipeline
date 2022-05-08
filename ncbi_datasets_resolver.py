@@ -29,6 +29,19 @@ def get_ass_list_from_json(ass_json_lis):
         ass_acc_lis.append(ass['assemblyInfo']['assemblyAccession'])
     return ass_acc_lis
 
+def ass2lineage(ass):
+    ass_line_dic = {}
+    store_top = r'D:\new_ncbi_dataset\genomes_store'
+    lineage_lis = os.listdir(store_top)
+    for lineage in lineage_lis:
+        ass_top_path = os.path.join(store_top, lineage, 'ncbi_dataset', 'data')
+        ass_lis = os.listdir(ass_top_path)
+        ass_line_dic[lineage] = ass_lis
+    for lineage in ass_line_dic.keys():
+        if ass in ass_line_dic[lineage]:
+            return lineage
+
+
 def list_fna_file(top):
     assembly = os.listdir(top)
     fna = [file for file in assembly if '.fna' in file]

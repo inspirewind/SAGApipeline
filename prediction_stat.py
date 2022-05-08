@@ -1,6 +1,6 @@
 import re
 from Bio import SeqIO
-
+from ass_jobs_stat import get_time_from_log
 from snakemake_job_parser import log2dic
 import busco_resolver
 
@@ -11,17 +11,20 @@ def get_gene_num(pred_aa):
 
 def get_interproscan_item_num(ips_tsv):
     line_num = 0
-    file = open(ips_tsv, 'r')
-    for line in file:
-        line_num += 1
-    file.close()
+    with open(ips_tsv, 'r') as f:
+        line_num = len(f.readlines())
     return line_num
 
-def get_running_time(snakemake_dic : dict, ass, rule) -> int:
-    # {jobid : (rule, input_ass, start_date_parse, finish_date_parse)}
-    for job, info in snakemake_dic.items():
-        if ass in info[1] and info[0] == rule:
-            return str((info[3] - info[2]).total_seconds())
+def get_running_time(braker_log):
+    return get_time_from_log(braker_log)
+
+# get running time from snakemake log, deprecated
+#
+# def get_running_time(snakemake_dic : dict, ass, rule) -> int:
+#     # {jobid : (rule, input_ass, start_date_parse, finish_date_parse)}
+#     for job, info in snakemake_dic.items():
+#         if ass in info[1] and info[0] == rule:
+#             return str((info[3] - info[2]).total_seconds())
 
 def get_matches_num():
     pass

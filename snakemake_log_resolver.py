@@ -35,12 +35,14 @@ def log_path2job(log_top):
                 # '3': ('braker2', ass, start_datetime, finish_datetime)
                 if info[1] not in ass_job_dic:
                     ass_job_dic[info[1]] = []
-                    if info[0] == 'braker2':
+                if info[0] == 'braker2':
+                    try:
                         ass_job_dic[info[1]].append(('braker2', info[2], info[3]))
-                    else:
-                        ass_job_dic[info[1]].append(info[0])
+                    except IndexError:
+                        print(f'WARN: {jobid}, {info}')
                 else:
                     ass_job_dic[info[1]].append(info[0])
+         
     return ass_job_dic
 
 

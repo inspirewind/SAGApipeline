@@ -5,7 +5,7 @@ from ncbi_datasets_resolver import resolve_ass_json, get_ass_list_from_json
 genomes_rec_part_top = r'D:\new_ncbi_dataset\genomes_rec_part'
 part_lis = os.listdir(genomes_rec_part_top)
 
-def validate_job_dic(job_dic, part):
+def validate_job_dic(job_dic: dict, part):
     for ass, jobs in job_dic.items():
         ass_path = os.path.join(genomes_rec_part_top, part, ass)
         braker_path = os.path.join(ass_path, 'braker')

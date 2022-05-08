@@ -1,19 +1,22 @@
 import decimal
 import statistics
-import csv
 import os
 import numpy as np
 
 class Diamond_tsv_resolver:
-    def __init__(self, tsv, pred_prs, ips) -> None:
+    def __init__(self, tsv, query_prs, ips=None) -> None:
         self.e_value_lis = [] # e_value_lis, len = diamond alignment items number, one gene can have multiple alignments
         self.dec_evalue_lis = []
         self.blast_lis = [] # genes that have blast alignment
         self.ips_lis = [] # genes that have interproscan annotation
         self.no_ali_lis = [] # all no ali gene, including no ali but in ips and no ips
         self.no_ali_in_ips_lis = [] # no ali but in ips (new gene maybe)
-        self.pred_prs_lis = [] # seqs in augustus.hints.aa
-        (self.tsv, self.pred_prs, self.ips) = (tsv, pred_prs, ips)
+        self.query_prs_lis = [] # seqs in augustus.hints.aa
+
+        # use for ORF classifier
+        self.coding_lis = []
+        self.no_coding_lis = []
+        (self.tsv, self.query_prs, self.ips) = (tsv, query_prs, ips)
 
         with open(self.tsv) as f:
             evalue = np.loadtxt(f, dtype = 'float', delimiter = '\t', usecols = 10)
@@ -24,21 +27,26 @@ class Diamond_tsv_resolver:
             self.blast_lis = set(list(genes))
             # prediction genes that have alignments, had removed the duplicates that one gene have multiple alignments
 
+        with open(self.tsv) as f:
+            database_seq = np.loadtxt(f, dtype = 'str', delimiter = '\t', usecols = 1)
+            self.coding_lis = set(list(database_seq))
+
         # using decimal always
         for evalue in self.e_value_lis:
             if evalue is not None:
                 self.dec_evalue_lis.append(decimal.Decimal(evalue))
 
-        with open(self.pred_prs) as f:
+        with open(self.query_prs) as f:
             for line in f:
                 if line.startswith('>'):
-                    self.pred_prs_lis.append(line.replace('>', '').replace('\n', ''))
+                    self.query_prs_lis.append(line.replace('>', '').replace('\n', ''))
 
-        with open(self.ips) as f:
-            ips_ali = np.loadtxt(f, dtype = 'str', delimiter = '\t', usecols = 0)
-            self.ips_lis = list(ips_ali)
+        if self.ips is not None:
+            with open(self.ips) as f:
+                ips_ali = np.loadtxt(f, dtype = 'str', delimiter = '\t', usecols = 0)
+                self.ips_lis = list(ips_ali)
 
-        print()
+        # print()
 
     def get_zero_num(self):
         num = 0
@@ -57,10 +65,9 @@ class Diamond_tsv_resolver:
         dec_am = statistics.mean(self.dec_evalue_lis)
         return dec_am
 
-
     def get_no_ali_rate(self):
         pr_num = 0
-        with open(self.pred_prs) as f:
+        with open(self.query_prs) as f:
             for line in f:
                 if '>' in line:
                     pr_num += 1
@@ -69,17 +76,22 @@ class Diamond_tsv_resolver:
         return no_ali_rate
     
     def get_no_ali_lis(self):
-        pred_prs_set = set(self.pred_prs_lis)
-        for pr in pred_prs_set:
+        query_prs_set = set(self.query_prs_lis)
+        for pr in query_prs_set:
             if pr not in set(self.blast_lis):
                 self.no_ali_lis.append(pr)
         return(self.no_ali_lis)
     
+    
     def get_no_ali_in_ips_lis(self):
-        for no_ali_pr in self.no_ali_lis:
-            if no_ali_pr in self.ips_lis:
-                self.no_ali_in_ips_lis.append(no_ali_pr)
-        return self.no_ali_in_ips_lis
+        if self.ips is not None:
+            for no_ali_pr in self.no_ali_lis:
+                if no_ali_pr in self.ips_lis:
+                    self.no_ali_in_ips_lis.append(no_ali_pr)
+            return self.no_ali_in_ips_lis
+        else:
+            print('no ips file')
+
 
         
 
