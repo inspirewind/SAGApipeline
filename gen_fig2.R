@@ -131,3 +131,15 @@ library(scales)
 ggplot(data = data,aes(x=Petal.Length,y=Sepal.Length,colour=Species))+
   geom_point()
 
+
+
+
+
+
+
+
+
+
+
+
+
