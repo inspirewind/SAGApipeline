@@ -1,17 +1,21 @@
-# def a():
-#     def b():
-#         return "i'm b"
-#     print(b())
-# a()
-
-import os
-
-# with open(r'C:\Users\lr201\code\gene_prediction_pipeline\test\fna_stat.txt', 'r') as f:
-#     lis = f.readlines()
-#     print(len(lis))
+# import os
+# import shutil
+# from tqdm import tqdm
 
 
-linux_path = 'mnt/d'
-win_path = r'gene_prediction_pipeline\test'
+# src_top = r'/mnt/d/new_ncbi_dataset/genomes_rec_busco/final_results'
+# dst_top = r'/mnt/d/new_ncbi_dataset/genomes_rec_busco/protein/auto'
 
-print(os.path.join(linux_path, win_path))
+# ass_lis = os.listdir(src_top)
+# ass_lis = [ass for ass in ass_lis if 'GCA' in ass]
+
+# bar_lis = tqdm(ass_lis)
+# for ass in bar_lis:
+#     busco_src = os.path.join(src_top, ass, 'busco_output_dir')
+#     if os.path.exists(busco_src):
+#         # print(os.path.join(dst_top, ass))
+#         shutil.copytree(busco_src, os.path.join(dst_top, ass))
+#     bar_lis.set_description(f'ass: {ass}')
+
+a = 0
+print((a := 3))

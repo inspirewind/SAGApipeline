@@ -1,7 +1,7 @@
 import os
 from busco_resolver import busco_resolver
 
-busco_top = r'D:\new_ncbi_dataset\genome_rec_busco'
+busco_top = r'D:\new_ncbi_dataset\genomes_rec_busco'
 part_lis = os.listdir(os.path.join(busco_top, 'done'))
 lineage_dic = {'Eu': 'eukaryota', 'St': 'stramenopiles', 'Vi': 'viridiplantae', 'Al': 'alveolata', 'Eg': 'euglenozoa', 'Ch': 'chlorophyta'}
 
@@ -9,7 +9,7 @@ def target_res(path):
     target_lis = path.split('_')
 
     mode = target_lis[2]
-    busco_lineage = target_lis[3].replace('l', '')
+    busco_lineage = ('_' + target_lis[3]).replace('_l', '')
     augustus_species = target_lis[4].replace('aup', '')
     ass_lineage = target_lis[5]
     taxid = target_lis[6]
