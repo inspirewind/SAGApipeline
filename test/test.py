@@ -1,4 +1,4 @@
-# import os
+import os
 # import shutil
 # from tqdm import tqdm
 
@@ -17,5 +17,16 @@
 #         shutil.copytree(busco_src, os.path.join(dst_top, ass))
 #     bar_lis.set_description(f'ass: {ass}')
 
-a = 0
-print((a := 3))
+# mode_lis = ['genome', 'protein']
+# type_lis = ['LCA', 'recommend', 'auto']
+# for mode in mode_lis:
+#     for type in type_lis:
+#         print(mode, type)
+
+# top = r'D:\new_ncbi_dataset\genomes_rec_busco\protein\recommend\Xanthophyceae_2833'
+# print(os.listdir(top))
+
+mode_lis = ['genome', 'protein']
+strategy_lis = ['LCA', 'recommend', 'auto']
+for mode, strategy in zip(mode_lis, strategy_lis):
+    print(mode, strategy)
