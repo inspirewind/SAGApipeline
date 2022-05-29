@@ -26,7 +26,7 @@ import os
 # top = r'D:\new_ncbi_dataset\genomes_rec_busco\protein\recommend\Xanthophyceae_2833'
 # print(os.listdir(top))
 
-mode_lis = ['genome', 'protein']
-strategy_lis = ['LCA', 'recommend', 'auto']
-for mode, strategy in zip(mode_lis, strategy_lis):
-    print(mode, strategy)
+mode_lis, strategy_lis = ['genome', 'protein'], ['LCA', 'recommend', 'auto']
+
+product = [f'{mode}/{strategy}' for mode in mode_lis for strategy in strategy_lis]
+print(product)

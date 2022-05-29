@@ -29,9 +29,10 @@ def get_ass_list_from_json(ass_json_lis):
         ass_acc_lis.append(ass['assemblyInfo']['assemblyAccession'])
     return ass_acc_lis
 
-def ass2lineage(ass):
+def ass2lineage(ass) -> str:
     ass_line_dic = {}
-    store_top = r'D:\new_ncbi_dataset\genomes_store'
+    # store_top = r'D:\new_ncbi_dataset\genomes_store'
+    store_top = r'/mnt/d/new_ncbi_dataset/genomes_store'
     lineage_lis = os.listdir(store_top)
     for lineage in lineage_lis:
         ass_top_path = os.path.join(store_top, lineage, 'ncbi_dataset', 'data')

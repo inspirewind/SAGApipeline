@@ -2,7 +2,11 @@ import os
 from tqdm import tqdm
 from shutil import make_archive, copy
 
-result_opt_top = r'D:\new_ncbi_dataset\result_optimize'
+busco_top = r'E:\genomes_rec_busco'
+result_opt_top = r'E:\new_ncbi_dataset\result_optimize'
+mode_lis = ['genome', 'protein']
+strategy_lis = ['LCA', 'recommend', 'auto']
+
 
 def optimize_braker_ep():
     pass
@@ -22,18 +26,23 @@ def optimize_busco(ass_path, mode, strategy):
     busco_var_dir = None
     real_output_dir = None
 
-    first_top = os.path.join(ass_path, 'busco_output_dir')
-    if os.path.exists(first_top):
-        busco_var_dir = [x for x in os.listdir(first_top) if 'busco' in x][0]
-        real_output_dir = os.path.join(ass_path, 'busco_output_dir', busco_var_dir)
+    if any("busco" in s for s in os.listdir(ass_path)):
+        first_var = [x for x in os.listdir(os.path.join(ass_path)) if 'busco' in x][0]
+        first_var_path = os.path.join(ass_path, first_var)
+        if any('short_summary' in s for s in os.listdir(first_var_path)):
+            real_output_dir = first_var_path
+            # print(f'{mode}, {strategy}, {real_output_dir}')
+        elif '.snakemake_timestamp' in os.listdir(first_var_path):
+            second_var_path = [x for x in os.listdir(os.path.join(first_var_path)) if 'busco' in x][0]
+            real_output_dir = os.path.join(first_var_path, second_var_path)
+            # print(f'{mode}, {strategy}, {real_output_dir}')
+        else:
+            print(f'{mode}, {strategy}, {ass} find busco output dir error')
+            return None
     else:
-        print(f'{ass} No busco first_top')
-        return
-    
-    if real_output_dir is None:
-        print(f'{ass} No busco real output dir found')
-        return
-    
+        print(f'{ass} busco maybe not run')
+        return None
+
     tar_lis = [tar for tar in os.listdir(real_output_dir) if 'run' in tar]
     if mode == 'genome' and (strategy == 'LCA' or strategy == 'recommend'):
         tar_lis.append('blast_db')
@@ -42,6 +51,7 @@ def optimize_busco(ass_path, mode, strategy):
     tar_lis.append('logs')
 
     dst_path = os.path.join(result_opt_top, ass, mode, strategy)
+    # dst_path = os.path.join(result_opt_top, mode, strategy, ass)
     for dir in tar_lis:
         if not os.path.exists(dst_path):
             os.makedirs(dst_path)
@@ -66,9 +76,6 @@ def optimize_busco(ass_path, mode, strategy):
 
 
 def main():
-    busco_top = r'D:\new_ncbi_dataset\genomes_rec_busco'
-    mode_lis = ['genome', 'protein']
-    strategy_lis = ['LCA', 'recommend', 'auto']
     for mode in mode_lis:
         for strategy in strategy_lis:
             run_top = os.path.join(busco_top, mode, strategy) # safe
