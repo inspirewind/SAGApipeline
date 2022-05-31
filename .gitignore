@@ -19,3 +19,4 @@ test/GCA_000091205.1/augustus.hints.aa
 *.png
 *.R
 *.R
+*.svg

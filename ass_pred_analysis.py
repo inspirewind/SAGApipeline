@@ -2,7 +2,7 @@ import os
 from assembly_stat import get_contig_N50, get_contig_num, get_genome_size
 from prediction_stat import get_gene_num, get_interproscan_item_num, get_running_time
 from ncbi_datasets_resolver import ass2lineage
-from ass_jobs_stat import jobs_stat
+
 
 # pred_aa_join = r'braker2_ep\braker\augustus.hints.aa'
 # interproscan_join = r'interproscan\interproscan.tsv'
@@ -41,6 +41,7 @@ for ass in ass_lis:
         ips_item_num = get_interproscan_item_num(interproscan_path)
         running_time = get_running_time(braker_log_path)
 
-        print(ass, lineage, contig_N50, contig_num, genome_size, gene_num, ips_item_num, running_time)
+        print(f'{ass}, {lineage}, {contig_N50}, {contig_num}, {genome_size}, {gene_num}, {ips_item_num}, {running_time}')
     else:
-        print(ass)
+        # print(ass)
+        pass

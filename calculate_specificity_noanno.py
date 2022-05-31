@@ -3,7 +3,7 @@ from Bio import SeqIO
 from diamond_tsv_resolver import *
 from ncbi_datasets_resolver import ass2lineage
 
-ass_top = r'F:\final_results'
+ass_top = r'D:\new_ncbi_dataset\final_results'
 ass_lis = os.listdir(ass_top)
 for ass in ass_lis:
     matches_path = os.path.join(ass_top, ass, 'nr_expand_blast', 'matches.tsv')

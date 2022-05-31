@@ -6,7 +6,7 @@ library(dplyr)
 setwd("C:/Users/lr201/code/gene_prediction_pipeline")
 # using pred_stat inquire ass_stat
 
-data = read.csv("stat_data.txt", sep = " ")
+data = read.csv("ass_pred_analysis_remove_na.csv", sep = ",")
 data_log = log10(select(data, -1, -2) + 1)
 theme_set(theme_bw())
 
@@ -21,43 +21,47 @@ ggcorrplot(corr, hc.order = TRUE, type = "lower",
 ass_stat = c(data$contig_N50, data$contig_num, data$genome_size)
 pred_stat = c(data$gene_num, data$ips_item_num, data$running_time)
 
+my.formula <- y ~ x
 gs_gn = ggplot(data = data_log, aes(x = genome_size, y = gene_num)) +
   geom_point(aes(col = data$lineage)) + 
   geom_smooth(method = lm, level = 0.90, colour = "#009900") + 
-  stat_poly_eq(formula = y ~ x, 
+  stat_poly_eq(formula = my.formula, 
              aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
              parse = TRUE)
-gs_gn
-
-
-my.formula <- y ~ x
 gn_iin = ggplot(data = data_log, aes(x = gene_num, y = ips_item_num)) +
-  geom_point() + 
+  geom_point(aes(col = data$lineage)) + 
   geom_smooth(method = lm, level = 0.95, colour = "#009900") + 
   stat_poly_eq(formula = my.formula, 
                aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
                parse = TRUE)
-gn_iin
-
 gs_iin = ggplot(data = data_log, aes(x = genome_size, y = ips_item_num)) +
-  geom_point() + 
+  geom_point(aes(col = data$lineage)) + 
   geom_smooth(method = lm, level = 0.95, colour = "#009900") + 
   stat_poly_eq(formula = my.formula, 
                aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
                parse = TRUE)
-gs_iin
-
 gn_rt = ggplot(data = data_log, aes(x = gene_num, y = running_time)) +
-  geom_point() + 
+  geom_point(aes(col = data$lineage)) + 
   geom_smooth(method = lm, level = 0.95, colour = "#009900") + 
   stat_poly_eq(formula = my.formula, 
                aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
                parse = TRUE)
-gn_rt
+
+library(lemon)
+grid_arrange_shared_legend(gs_gn, gn_iin, gs_iin, gn_rt, ncol = 2, nrow = 2, position='top')
 
 ggarrange(gs_gn, gn_iin, gs_iin, gn_rt + rremove("x.text"), 
           labels = c("A", "B", "C","D"),
           ncol = 2, nrow = 2)
+
+
+n50_gs = ggplot(data = data_log, aes(x = contig_N50, y = genome_size)) +
+  geom_point(aes(col = data$lineage)) + 
+  geom_smooth(method = lm, level = 0.90, colour = "#009900") + 
+  stat_poly_eq(formula = my.formula, 
+               aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
+               parse = TRUE)
+n50_gs
 
 
 ggplot(data = data_log, aes(x = contig_num, y = running_time)) +

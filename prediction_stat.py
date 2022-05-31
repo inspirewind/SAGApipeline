@@ -1,7 +1,6 @@
 import re
 from Bio import SeqIO
 from ass_jobs_stat import get_time_from_log
-from snakemake_job_parser import log2dic
 import busco_resolver
 
 
