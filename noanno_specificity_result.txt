@@ -1,0 +1,741 @@
+ass: GCA_002896455.3, total: 15681, tp: 13632, fn: 474
+all in: 13632, all out: 474, ips_nodia: 643, dia_noips: 932
+sensitivity: 0.96639728
+ass: GCA_004335575.1, total: 13694, tp: 11810, fn: 377
+all in: 11810, all out: 377, ips_nodia: 987, dia_noips: 520
+sensitivity: 0.96906540
+ass: GCA_900291995.1, total: 16702, tp: 13986, fn: 489
+all in: 13986, all out: 489, ips_nodia: 1052, dia_noips: 1175
+sensitivity: 0.96621762
+ass: GCA_000090985.2, total: 11041, tp: 10421, fn: 14
+all in: 10421, all out: 14, ips_nodia: 31, dia_noips: 575
+sensitivity: 0.99865836
+ass: GCA_905221615.1, total: 200354, tp: 120594, fn: 14945
+all in: 120594, all out: 14945, ips_nodia: 14374, dia_noips: 50441
+sensitivity: 0.88973653
+ass: GCA_018290735.1, total: 13033, tp: 11751, fn: 191
+all in: 11751, all out: 191, ips_nodia: 445, dia_noips: 646
+sensitivity: 0.98400603
+ass: GCA_004335635.1, total: 16324, tp: 12431, fn: 1092
+all in: 12431, all out: 1092, ips_nodia: 1950, dia_noips: 851
+sensitivity: 0.91924869
+ass: GCA_019154785.2, total: 37149, tp: 32043, fn: 138
+all in: 32043, all out: 138, ips_nodia: 59, dia_noips: 4909
+sensitivity: 0.99571176
+ass: GCA_000143455.1, total: 24700, tp: 20857, fn: 547
+all in: 20857, all out: 547, ips_nodia: 1059, dia_noips: 2237
+sensitivity: 0.97444403
+ass: GCA_905146915.1, total: 21116, tp: 13380, fn: 1841
+all in: 13380, all out: 1841, ips_nodia: 4684, dia_noips: 1211
+sensitivity: 0.87904868
+ass: GCA_002794665.1, total: 5376, tp: 4927, fn: 101
+all in: 4927, all out: 101, ips_nodia: 246, dia_noips: 102
+sensitivity: 0.97991249
+ass: GCA_019448385.1, total: 12940, tp: 11544, fn: 27
+all in: 11544, all out: 27, ips_nodia: 48, dia_noips: 1321
+sensitivity: 0.99766658
+ass: GCA_018397975.1, total: 32135, tp: 18182, fn: 5055
+all in: 18182, all out: 5055, ips_nodia: 7789, dia_noips: 1109
+sensitivity: 0.78245901
+ass: GCA_021605115.1, total: 15501, tp: 14187, fn: 171
+all in: 14187, all out: 171, ips_nodia: 552, dia_noips: 591
+sensitivity: 0.98809026
+ass: GCA_902602495.3, total: 35987, tp: 29591, fn: 371
+all in: 29591, all out: 371, ips_nodia: 870, dia_noips: 5155
+sensitivity: 0.98761765
+ass: GCA_000876415.1, total: 7514, tp: 6467, fn: 246
+all in: 6467, all out: 246, ips_nodia: 579, dia_noips: 222
+sensitivity: 0.96335468
+ass: GCA_000214015.2, total: 7902, tp: 7457, fn: 12
+all in: 7457, all out: 12, ips_nodia: 9, dia_noips: 424
+sensitivity: 0.99839336
+ass: GCA_009928355.1, total: 19587, tp: 17667, fn: 175
+all in: 17667, all out: 175, ips_nodia: 186, dia_noips: 1559
+sensitivity: 0.99019168
+ass: GCA_013995675.1, total: 4747, tp: 4437, fn: 22
+all in: 4437, all out: 22, ips_nodia: 19, dia_noips: 269
+sensitivity: 0.99506616
+ass: GCA_002897115.2, total: 6690, tp: 6172, fn: 126
+all in: 6172, all out: 126, ips_nodia: 200, dia_noips: 192
+sensitivity: 0.97999365
+ass: GCA_004335735.1, total: 32809, tp: 27148, fn: 1301
+all in: 27148, all out: 1301, ips_nodia: 2518, dia_noips: 1842
+sensitivity: 0.95426904
+ass: GCA_020887355.1, total: 11014, tp: 10200, fn: 26
+all in: 10200, all out: 26, ips_nodia: 38, dia_noips: 750
+sensitivity: 0.99745746
+ass: GCA_003203535.1, total: 14295, tp: 13462, fn: 2
+all in: 13462, all out: 2, ips_nodia: 20, dia_noips: 811
+sensitivity: 0.99985146
+ass: GCA_003063905.1, total: 10349, tp: 9398, fn: 238
+all in: 9398, all out: 238, ips_nodia: 388, dia_noips: 325
+sensitivity: 0.97530095
+ass: GCA_001614235.1, total: 10101, tp: 9117, fn: 134
+all in: 9117, all out: 134, ips_nodia: 265, dia_noips: 585
+sensitivity: 0.98551508
+ass: GCA_003117195.1, total: 19139, tp: 16468, fn: 555
+all in: 16468, all out: 555, ips_nodia: 1071, dia_noips: 1045
+sensitivity: 0.96739705
+ass: GCA_019155205.1, total: 10085, tp: 7965, fn: 593
+all in: 7965, all out: 593, ips_nodia: 768, dia_noips: 759
+sensitivity: 0.93070811
+ass: GCA_014905635.1, total: 12700, tp: 11967, fn: 33
+all in: 11967, all out: 33, ips_nodia: 55, dia_noips: 645
+sensitivity: 0.99725000
+ass: GCA_013435795.1, total: 40988, tp: 22656, fn: 6908
+all in: 22656, all out: 6908, ips_nodia: 8933, dia_noips: 2491
+sensitivity: 0.76633744
+ass: GCA_009014695.1, total: 9905, tp: 8355, fn: 246
+all in: 8355, all out: 246, ips_nodia: 508, dia_noips: 796
+sensitivity: 0.97139867
+ass: GCA_018136815.1, total: 27213, tp: 16343, fn: 3176
+all in: 16343, all out: 3176, ips_nodia: 6098, dia_noips: 1596
+sensitivity: 0.83728675
+ass: GCA_004565275.1, total: 10111, tp: 9532, fn: 19
+all in: 9532, all out: 19, ips_nodia: 13, dia_noips: 547
+sensitivity: 0.99801068
+ass: GCA_000733215.1, total: 9455, tp: 8941, fn: 14
+all in: 8941, all out: 14, ips_nodia: 36, dia_noips: 464
+sensitivity: 0.99843663
+ass: GCA_006782975.1, total: 14889, tp: 13427, fn: 196
+all in: 13427, all out: 196, ips_nodia: 207, dia_noips: 1059
+sensitivity: 0.98561257
+ass: GCA_018327485.1, total: 108456, tp: 66739, fn: 4828
+all in: 66739, all out: 4828, ips_nodia: 3250, dia_noips: 33639
+sensitivity: 0.93253874
+ass: GCA_001662365.1, total: 14531, tp: 12469, fn: 402
+all in: 12469, all out: 402, ips_nodia: 982, dia_noips: 678
+sensitivity: 0.96876700
+ass: GCA_004335845.1, total: 16055, tp: 12314, fn: 1058
+all in: 12314, all out: 1058, ips_nodia: 1847, dia_noips: 836
+sensitivity: 0.92087945
+ass: GCA_003117095.1, total: 18995, tp: 16330, fn: 610
+all in: 16330, all out: 610, ips_nodia: 1068, dia_noips: 987
+sensitivity: 0.96399055
+ass: GCA_004335775.1, total: 43117, tp: 34418, fn: 1952
+all in: 34418, all out: 1952, ips_nodia: 4326, dia_noips: 2421
+sensitivity: 0.94632939
+ass: GCA_001662425.1, total: 20991, tp: 18214, fn: 586
+all in: 18214, all out: 586, ips_nodia: 710, dia_noips: 1481
+sensitivity: 0.96882979
+ass: GCA_002891735.1, total: 22745, tp: 19033, fn: 577
+all in: 19033, all out: 577, ips_nodia: 779, dia_noips: 2356
+sensitivity: 0.97057624
+ass: GCA_020975725.1, total: 9577, tp: 7477, fn: 1128
+all in: 7477, all out: 1128, ips_nodia: 741, dia_noips: 231
+sensitivity: 0.86891342
+ass: GCA_002205965.3, total: 35099, tp: 20844, fn: 5039
+all in: 20844, all out: 5039, ips_nodia: 6287, dia_noips: 2929
+sensitivity: 0.80531623
+ass: GCA_002245835.2, total: 13756, tp: 12861, fn: 46
+all in: 12861, all out: 46, ips_nodia: 42, dia_noips: 807
+sensitivity: 0.99643604
+ass: GCA_008729055.1, total: 7823, tp: 6735, fn: 174
+all in: 6735, all out: 174, ips_nodia: 555, dia_noips: 359
+sensitivity: 0.97481546
+ass: GCA_006782965.1, total: 15140, tp: 13740, fn: 173
+all in: 13740, all out: 173, ips_nodia: 195, dia_noips: 1032
+sensitivity: 0.98756559
+ass: GCA_000708835.1, total: 17058, tp: 15338, fn: 129
+all in: 15338, all out: 129, ips_nodia: 165, dia_noips: 1426
+sensitivity: 0.99165966
+ass: GCA_004335565.1, total: 7143, tp: 6257, fn: 225
+all in: 6257, all out: 225, ips_nodia: 446, dia_noips: 215
+sensitivity: 0.96528849
+ass: GCA_004335625.1, total: 8181, tp: 7118, fn: 233
+all in: 7118, all out: 233, ips_nodia: 684, dia_noips: 146
+sensitivity: 0.96830363
+ass: GCA_004335915.1, total: 19730, tp: 17913, fn: 66
+all in: 17913, all out: 66, ips_nodia: 144, dia_noips: 1607
+sensitivity: 0.99632905
+ass: GCA_002939045.1, total: 14413, tp: 13206, fn: 148
+all in: 13206, all out: 148, ips_nodia: 185, dia_noips: 874
+sensitivity: 0.98891718
+ass: GCA_020975765.1, total: 66325, tp: 34240, fn: 8846
+all in: 34240, all out: 8846, ips_nodia: 16186, dia_noips: 7053
+sensitivity: 0.79468969
+ass: GCA_002049455.2, total: 22451, tp: 15601, fn: 1059
+all in: 15601, all out: 1059, ips_nodia: 4621, dia_noips: 1170
+sensitivity: 0.93643457
+ass: GCA_003130725.1, total: 14974, tp: 13227, fn: 311
+all in: 13227, all out: 311, ips_nodia: 632, dia_noips: 804
+sensitivity: 0.97702763
+ass: GCA_902705575.1, total: 42888, tp: 34582, fn: 558
+all in: 34582, all out: 558, ips_nodia: 1542, dia_noips: 6206
+sensitivity: 0.98412066
+ass: GCA_013372505.1, total: 9103, tp: 8522, fn: 68
+all in: 8522, all out: 68, ips_nodia: 112, dia_noips: 401
+sensitivity: 0.99208382
+ass: GCA_014885115.2, total: 20518, tp: 14867, fn: 1266
+all in: 14867, all out: 1266, ips_nodia: 2636, dia_noips: 1749
+sensitivity: 0.92152730
+ass: GCA_000818905.1, total: 14098, tp: 11527, fn: 373
+all in: 11527, all out: 373, ips_nodia: 1163, dia_noips: 1035
+sensitivity: 0.96865546
+ass: GCA_002838785.1, total: 10606, tp: 9797, fn: 49
+all in: 9797, all out: 49, ips_nodia: 124, dia_noips: 636
+sensitivity: 0.99502336
+ass: GCA_004519485.1, total: 9755, tp: 8929, fn: 127
+all in: 8929, all out: 127, ips_nodia: 279, dia_noips: 420
+sensitivity: 0.98597615
+ass: GCA_004335465.1, total: 9574, tp: 8877, fn: 15
+all in: 8877, all out: 15, ips_nodia: 18, dia_noips: 664
+sensitivity: 0.99831309
+ass: GCA_019693545.1, total: 17170, tp: 12074, fn: 1561
+all in: 12074, all out: 1561, ips_nodia: 1826, dia_noips: 1709
+sensitivity: 0.88551522
+ass: GCA_018806925.1, total: 23850, tp: 18825, fn: 628
+all in: 18825, all out: 628, ips_nodia: 1212, dia_noips: 3185
+sensitivity: 0.96771706
+ass: GCA_905339615.1, total: 10023, tp: 9299, fn: 17
+all in: 9299, all out: 17, ips_nodia: 14, dia_noips: 693
+sensitivity: 0.99817518
+ass: GCA_002887195.1, total: 29168, tp: 23837, fn: 645
+all in: 23837, all out: 645, ips_nodia: 1686, dia_noips: 3000
+sensitivity: 0.97365411
+ass: GCA_001750085.1, total: 30660, tp: 26351, fn: 267
+all in: 26351, all out: 267, ips_nodia: 586, dia_noips: 3456
+sensitivity: 0.98996919
+ass: GCA_015146655.1, total: 23146, tp: 16954, fn: 1809
+all in: 16954, all out: 1809, ips_nodia: 2952, dia_noips: 1431
+sensitivity: 0.90358685
+ass: GCA_004335385.1, total: 9484, tp: 8397, fn: 133
+all in: 8397, all out: 133, ips_nodia: 258, dia_noips: 696
+sensitivity: 0.98440797
+ass: GCA_009767595.1, total: 131066, tp: 57472, fn: 29329
+all in: 57472, all out: 29329, ips_nodia: 24493, dia_noips: 19772
+sensitivity: 0.66211219
+ass: GCA_004335795.1, total: 25233, tp: 20793, fn: 857
+all in: 20793, all out: 857, ips_nodia: 1476, dia_noips: 2107
+sensitivity: 0.96041570
+ass: GCA_001662385.1, total: 18742, tp: 14407, fn: 1154
+all in: 14407, all out: 1154, ips_nodia: 2335, dia_noips: 846
+sensitivity: 0.92584024
+ass: GCA_905178155.1, total: 20906, tp: 16600, fn: 461
+all in: 16600, all out: 461, ips_nodia: 2228, dia_noips: 1617
+sensitivity: 0.97297931
+ass: GCA_008037345.1, total: 20577, tp: 16787, fn: 846
+all in: 16787, all out: 846, ips_nodia: 532, dia_noips: 2412
+sensitivity: 0.95202178
+ass: GCA_000611645.1, total: 22525, tp: 19140, fn: 356
+all in: 19140, all out: 356, ips_nodia: 1180, dia_noips: 1849
+sensitivity: 0.98173984
+ass: GCA_019693505.1, total: 5703, tp: 5210, fn: 59
+all in: 5210, all out: 59, ips_nodia: 53, dia_noips: 381
+sensitivity: 0.98880243
+ass: GCA_006232345.1, total: 6682, tp: 5989, fn: 114
+all in: 5989, all out: 114, ips_nodia: 131, dia_noips: 448
+sensitivity: 0.98132066
+ass: GCA_019650255.1, total: 18631, tp: 16639, fn: 336
+all in: 16639, all out: 336, ips_nodia: 428, dia_noips: 1228
+sensitivity: 0.98020619
+ass: GCA_002149895.1, total: 43019, tp: 38457, fn: 289
+all in: 38457, all out: 289, ips_nodia: 485, dia_noips: 3788
+sensitivity: 0.99254117
+ass: GCA_006232515.1, total: 6527, tp: 5952, fn: 30
+all in: 5952, all out: 30, ips_nodia: 33, dia_noips: 512
+sensitivity: 0.99498495
+ass: GCA_009193075.1, total: 9440, tp: 7598, fn: 227
+all in: 7598, all out: 227, ips_nodia: 1490, dia_noips: 125
+sensitivity: 0.97099042
+ass: GCA_009829735.1, total: 24779, tp: 16542, fn: 1618
+all in: 16542, all out: 1618, ips_nodia: 5561, dia_noips: 1058
+sensitivity: 0.91090308
+ass: GCA_905231925.1, total: 122312, tp: 81667, fn: 5296
+all in: 81667, all out: 5296, ips_nodia: 4326, dia_noips: 31023
+sensitivity: 0.93910054
+ass: GCA_020086505.1, total: 15845, tp: 13507, fn: 585
+all in: 13507, all out: 585, ips_nodia: 776, dia_noips: 977
+sensitivity: 0.95848708
+ass: GCA_001742925.1, total: 40618, tp: 36030, fn: 696
+all in: 36030, all out: 696, ips_nodia: 1504, dia_noips: 2388
+sensitivity: 0.98104885
+ass: GCA_003117035.1, total: 17093, tp: 14962, fn: 460
+all in: 14962, all out: 460, ips_nodia: 742, dia_noips: 929
+sensitivity: 0.97017248
+ass: GCA_000151265.1, total: 10331, tp: 9766, fn: 45
+all in: 9766, all out: 45, ips_nodia: 184, dia_noips: 336
+sensitivity: 0.99541331
+ass: GCA_014080715.1, total: 27582, tp: 24541, fn: 106
+all in: 24541, all out: 106, ips_nodia: 340, dia_noips: 2595
+sensitivity: 0.99569927
+ass: GCA_900642245.1, total: 25316, tp: 18252, fn: 1505
+all in: 18252, all out: 1505, ips_nodia: 2735, dia_noips: 2824
+sensitivity: 0.92382447
+ass: GCA_016618255.1, total: 25353, tp: 21388, fn: 265
+all in: 21388, all out: 265, ips_nodia: 488, dia_noips: 3212
+sensitivity: 0.98776151
+ass: GCA_006232505.1, total: 6340, tp: 5675, fn: 67
+all in: 5675, all out: 67, ips_nodia: 56, dia_noips: 542
+sensitivity: 0.98833159
+ass: GCA_000310025.1, total: 30104, tp: 24301, fn: 683
+all in: 24301, all out: 683, ips_nodia: 1941, dia_noips: 3179
+sensitivity: 0.97266250
+ass: GCA_001430745.1, total: 13858, tp: 11891, fn: 400
+all in: 11891, all out: 400, ips_nodia: 838, dia_noips: 729
+sensitivity: 0.96745586
+ass: GCA_002588565.1, total: 29798, tp: 25797, fn: 562
+all in: 25797, all out: 562, ips_nodia: 1296, dia_noips: 2143
+sensitivity: 0.97867901
+ass: GCA_900095095.1, total: 30244, tp: 25424, fn: 150
+all in: 25424, all out: 150, ips_nodia: 426, dia_noips: 4244
+sensitivity: 0.99413467
+ass: GCA_019593585.1, total: 17472, tp: 13887, fn: 525
+all in: 13887, all out: 525, ips_nodia: 1631, dia_noips: 1429
+sensitivity: 0.96357202
+ass: GCA_001939145.1, total: 125585, tp: 80936, fn: 5352
+all in: 80936, all out: 5352, ips_nodia: 3507, dia_noips: 35790
+sensitivity: 0.93797515
+ass: GCA_000341285.1, total: 6282, tp: 5660, fn: 46
+all in: 5660, all out: 46, ips_nodia: 53, dia_noips: 523
+sensitivity: 0.99193831
+ass: GCA_006232405.1, total: 6838, tp: 6115, fn: 86
+all in: 6115, all out: 86, ips_nodia: 50, dia_noips: 587
+sensitivity: 0.98613127
+ass: GCA_003194525.1, total: 18017, tp: 14051, fn: 711
+all in: 14051, all out: 711, ips_nodia: 1547, dia_noips: 1708
+sensitivity: 0.95183579
+ass: GCA_016906445.1, total: 8954, tp: 7862, fn: 216
+all in: 7862, all out: 216, ips_nodia: 395, dia_noips: 481
+sensitivity: 0.97326071
+ass: GCA_009014725.1, total: 10168, tp: 8696, fn: 263
+all in: 8696, all out: 263, ips_nodia: 455, dia_noips: 754
+sensitivity: 0.97064405
+ass: GCA_008828725.1, total: 34060, tp: 21730, fn: 2996
+all in: 21730, all out: 2996, ips_nodia: 6015, dia_noips: 3319
+sensitivity: 0.87883200
+ass: GCA_019693415.1, total: 8679, tp: 7041, fn: 735
+all in: 7041, all out: 735, ips_nodia: 653, dia_noips: 250
+sensitivity: 0.90547840
+ass: GCA_006232545.1, total: 6835, tp: 6276, fn: 39
+all in: 6276, all out: 39, ips_nodia: 45, dia_noips: 475
+sensitivity: 0.99382423
+ass: GCA_905339545.1, total: 15559, tp: 14363, fn: 170
+all in: 14363, all out: 170, ips_nodia: 58, dia_noips: 968
+sensitivity: 0.98830248
+ass: GCA_016586335.1, total: 20503, tp: 16073, fn: 705
+all in: 16073, all out: 705, ips_nodia: 2401, dia_noips: 1324
+sensitivity: 0.95798069
+ass: GCA_006232315.1, total: 4771, tp: 4442, fn: 45
+all in: 4442, all out: 45, ips_nodia: 32, dia_noips: 252
+sensitivity: 0.98997103
+ass: GCA_016858145.1, total: 24632, tp: 22137, fn: 182
+all in: 22137, all out: 182, ips_nodia: 305, dia_noips: 2008
+sensitivity: 0.99184551
+ass: GCA_001584585.1, total: 23193, tp: 20798, fn: 77
+all in: 20798, all out: 77, ips_nodia: 166, dia_noips: 2152
+sensitivity: 0.99631138
+ass: GCA_004335685.1, total: 9634, tp: 9018, fn: 99
+all in: 9018, all out: 99, ips_nodia: 76, dia_noips: 441
+sensitivity: 0.98914116
+ass: GCA_017506865.1, total: 23114, tp: 19079, fn: 263
+all in: 19079, all out: 263, ips_nodia: 606, dia_noips: 3166
+sensitivity: 0.98640265
+ass: GCA_003970955.1, total: 82578, tp: 64882, fn: 1741
+all in: 64882, all out: 1741, ips_nodia: 2651, dia_noips: 13304
+sensitivity: 0.97386788
+ass: GCA_006782985.1, total: 13822, tp: 12642, fn: 124
+all in: 12642, all out: 124, ips_nodia: 138, dia_noips: 918
+sensitivity: 0.99028670
+ass: GCA_002154875.1, total: 16221, tp: 14951, fn: 10
+all in: 14951, all out: 10, ips_nodia: 9, dia_noips: 1251
+sensitivity: 0.99933160
+ass: GCA_002217885.1, total: 23539, tp: 20330, fn: 172
+all in: 20330, all out: 172, ips_nodia: 369, dia_noips: 2668
+sensitivity: 0.99161057
+ass: GCA_016834605.1, total: 20951, tp: 19324, fn: 102
+all in: 19324, all out: 102, ips_nodia: 336, dia_noips: 1189
+sensitivity: 0.99474931
+ass: GCA_001021125.1, total: 12326, tp: 11364, fn: 136
+all in: 11364, all out: 136, ips_nodia: 214, dia_noips: 612
+sensitivity: 0.98817391
+ass: GCA_018257845.1, total: 22169, tp: 19931, fn: 187
+all in: 19931, all out: 187, ips_nodia: 565, dia_noips: 1486
+sensitivity: 0.99070484
+ass: GCA_019693525.1, total: 19356, tp: 14767, fn: 725
+all in: 14767, all out: 725, ips_nodia: 2143, dia_noips: 1721
+sensitivity: 0.95320165
+ass: GCA_006232365.1, total: 6076, tp: 5309, fn: 63
+all in: 5309, all out: 63, ips_nodia: 51, dia_noips: 653
+sensitivity: 0.98827252
+ass: GCA_905237085.1, total: 228582, tp: 120672, fn: 29676
+all in: 120672, all out: 29676, ips_nodia: 23071, dia_noips: 55163
+sensitivity: 0.80261793
+ass: GCA_019693375.1, total: 9349, tp: 8400, fn: 242
+all in: 8400, all out: 242, ips_nodia: 500, dia_noips: 207
+sensitivity: 0.97199722
+ass: GCA_015473125.1, total: 13684, tp: 12429, fn: 68
+all in: 12429, all out: 68, ips_nodia: 66, dia_noips: 1121
+sensitivity: 0.99455869
+ass: GCA_002118135.1, total: 12404, tp: 11249, fn: 177
+all in: 11249, all out: 177, ips_nodia: 463, dia_noips: 515
+sensitivity: 0.98450901
+ass: GCA_003568905.1, total: 11271, tp: 9446, fn: 573
+all in: 9446, all out: 573, ips_nodia: 832, dia_noips: 420
+sensitivity: 0.94280866
+ass: GCA_905231905.1, total: 80262, tp: 46196, fn: 8060
+all in: 46196, all out: 8060, ips_nodia: 6962, dia_noips: 19044
+sensitivity: 0.85144500
+ass: GCA_000002595.3, total: 21895, tp: 19794, fn: 206
+all in: 19794, all out: 206, ips_nodia: 493, dia_noips: 1402
+sensitivity: 0.98970000
+ass: GCA_000569095.1, total: 10279, tp: 9526, fn: 41
+all in: 9526, all out: 41, ips_nodia: 135, dia_noips: 577
+sensitivity: 0.99571444
+ass: GCA_019702435.1, total: 9152, tp: 8205, fn: 68
+all in: 8205, all out: 68, ips_nodia: 46, dia_noips: 833
+sensitivity: 0.99178049
+ass: GCA_015144965.1, total: 58265, tp: 53732, fn: 532
+all in: 53732, all out: 532, ips_nodia: 372, dia_noips: 3629
+sensitivity: 0.99019608
+ass: GCA_001630525.1, total: 23996, tp: 21236, fn: 352
+all in: 21236, all out: 352, ips_nodia: 868, dia_noips: 1540
+sensitivity: 0.98369465
+ass: GCA_010646915.1, total: 10143, tp: 8796, fn: 425
+all in: 8796, all out: 425, ips_nodia: 352, dia_noips: 570
+sensitivity: 0.95390955
+ass: GCA_000147415.1, total: 15437, tp: 13886, fn: 246
+all in: 13886, all out: 246, ips_nodia: 444, dia_noips: 861
+sensitivity: 0.98259270
+ass: GCA_019693425.1, total: 13537, tp: 10486, fn: 555
+all in: 10486, all out: 555, ips_nodia: 1574, dia_noips: 922
+sensitivity: 0.94973281
+ass: GCA_005223375.1, total: 25756, tp: 15798, fn: 1711
+all in: 15798, all out: 1711, ips_nodia: 6225, dia_noips: 2022
+sensitivity: 0.90227883
+ass: GCA_009650465.1, total: 8314, tp: 6879, fn: 410
+all in: 6879, all out: 410, ips_nodia: 683, dia_noips: 342
+sensitivity: 0.94375086
+ass: GCA_019650175.1, total: 17054, tp: 15350, fn: 281
+all in: 15350, all out: 281, ips_nodia: 392, dia_noips: 1031
+sensitivity: 0.98202290
+ass: GCA_900617105.1, total: 15413, tp: 12533, fn: 966
+all in: 12533, all out: 966, ips_nodia: 1344, dia_noips: 570
+sensitivity: 0.92843914
+ass: GCA_019650235.1, total: 18702, tp: 16643, fn: 368
+all in: 16643, all out: 368, ips_nodia: 455, dia_noips: 1236
+sensitivity: 0.97836694
+ass: GCA_905339635.1, total: 15732, tp: 14450, fn: 174
+all in: 14450, all out: 174, ips_nodia: 75, dia_noips: 1033
+sensitivity: 0.98810175
+ass: GCA_004431415.1, total: 19961, tp: 11159, fn: 2911
+all in: 11159, all out: 2911, ips_nodia: 5693, dia_noips: 198
+sensitivity: 0.79310590
+ass: GCA_009720205.1, total: 10923, tp: 10140, fn: 125
+all in: 10140, all out: 125, ips_nodia: 183, dia_noips: 475
+sensitivity: 0.98782270
+ass: GCA_004335885.1, total: 3842, tp: 3162, fn: 107
+all in: 3162, all out: 107, ips_nodia: 412, dia_noips: 161
+sensitivity: 0.96726828
+ass: GCA_021209675.1, total: 16930, tp: 13506, fn: 748
+all in: 13506, all out: 748, ips_nodia: 1760, dia_noips: 916
+sensitivity: 0.94752350
+ass: GCA_009103195.1, total: 33871, tp: 15787, fn: 6338
+all in: 15787, all out: 6338, ips_nodia: 10629, dia_noips: 1117
+sensitivity: 0.71353672
+ass: GCA_001275005.1, total: 24631, tp: 20476, fn: 473
+all in: 20476, all out: 473, ips_nodia: 1240, dia_noips: 2442
+sensitivity: 0.97742136
+ass: GCA_001247695.1, total: 45276, tp: 19092, fn: 10110
+all in: 19092, all out: 10110, ips_nodia: 14578, dia_noips: 1496
+sensitivity: 0.65379084
+ass: GCA_002317545.1, total: 10353, tp: 8153, fn: 47
+all in: 8153, all out: 47, ips_nodia: 521, dia_noips: 1632
+sensitivity: 0.99426829
+ass: GCA_006232475.1, total: 6585, tp: 5960, fn: 31
+all in: 5960, all out: 31, ips_nodia: 38, dia_noips: 556
+sensitivity: 0.99482557
+ass: GCA_002158475.1, total: 9030, tp: 8332, fn: 47
+all in: 8332, all out: 47, ips_nodia: 29, dia_noips: 622
+sensitivity: 0.99439074
+ass: GCA_013187285.1, total: 36989, tp: 20305, fn: 4209
+all in: 20305, all out: 4209, ips_nodia: 7169, dia_noips: 5306
+sensitivity: 0.82830219
+ass: GCA_000372725.1, total: 73851, tp: 58397, fn: 2004
+all in: 58397, all out: 2004, ips_nodia: 3284, dia_noips: 10166
+sensitivity: 0.96682174
+ass: GCA_905339625.1, total: 11764, tp: 10950, fn: 64
+all in: 10950, all out: 64, ips_nodia: 27, dia_noips: 723
+sensitivity: 0.99418921
+ass: GCA_006232335.1, total: 6650, tp: 5928, fn: 110
+all in: 5928, all out: 110, ips_nodia: 88, dia_noips: 524
+sensitivity: 0.98178205
+ass: GCA_001598975.1, total: 13983, tp: 11934, fn: 521
+all in: 11934, all out: 521, ips_nodia: 1054, dia_noips: 474
+sensitivity: 0.95816941
+ass: GCA_014849475.1, total: 63590, tp: 36526, fn: 8076
+all in: 36526, all out: 8076, ips_nodia: 9992, dia_noips: 8996
+sensitivity: 0.81893189
+ass: GCA_009720215.1, total: 10973, tp: 10107, fn: 194
+all in: 10107, all out: 194, ips_nodia: 203, dia_noips: 469
+sensitivity: 0.98116688
+ass: GCA_004335895.1, total: 11311, tp: 10075, fn: 73
+all in: 10075, all out: 73, ips_nodia: 97, dia_noips: 1066
+sensitivity: 0.99280646
+ass: GCA_002814315.1, total: 12814, tp: 11660, fn: 144
+all in: 11660, all out: 144, ips_nodia: 394, dia_noips: 616
+sensitivity: 0.98780075
+ass: GCA_003116155.1, total: 13865, tp: 12827, fn: 91
+all in: 12827, all out: 91, ips_nodia: 90, dia_noips: 857
+sensitivity: 0.99295557
+ass: GCA_019693475.1, total: 7839, tp: 6797, fn: 158
+all in: 6797, all out: 158, ips_nodia: 108, dia_noips: 776
+sensitivity: 0.97728253
+ass: GCA_905178165.1, total: 22649, tp: 16901, fn: 961
+all in: 16901, all out: 961, ips_nodia: 2657, dia_noips: 2130
+sensitivity: 0.94619863
+ass: GCA_000226695.1, total: 10645, tp: 9374, fn: 211
+all in: 9374, all out: 211, ips_nodia: 335, dia_noips: 725
+sensitivity: 0.97798644
+ass: GCA_003427395.1, total: 150274, tp: 95268, fn: 5918
+all in: 95268, all out: 5918, ips_nodia: 10829, dia_noips: 38259
+sensitivity: 0.94151365
+ass: GCA_019202925.1, total: 9707, tp: 9067, fn: 8
+all in: 9067, all out: 8, ips_nodia: 11, dia_noips: 621
+sensitivity: 0.99911846
+ass: GCA_905237095.1, total: 196853, tp: 106656, fn: 24060
+all in: 106656, all out: 24060, ips_nodia: 18605, dia_noips: 47532
+sensitivity: 0.81593684
+ass: GCA_004798425.1, total: 61199, tp: 50229, fn: 3098
+all in: 50229, all out: 3098, ips_nodia: 4628, dia_noips: 3244
+sensitivity: 0.94190560
+ass: GCA_003346895.1, total: 23134, tp: 18107, fn: 1195
+all in: 18107, all out: 1195, ips_nodia: 1537, dia_noips: 2295
+sensitivity: 0.93808932
+ass: GCA_000258705.1, total: 11846, tp: 11159, fn: 24
+all in: 11159, all out: 24, ips_nodia: 49, dia_noips: 614
+sensitivity: 0.99785389
+ass: GCA_001870945.1, total: 9696, tp: 8849, fn: 131
+all in: 8849, all out: 131, ips_nodia: 257, dia_noips: 459
+sensitivity: 0.98541203
+ass: GCA_905231915.1, total: 75650, tp: 52919, fn: 2436
+all in: 52919, all out: 2436, ips_nodia: 2292, dia_noips: 18003
+sensitivity: 0.95599314
+ass: GCA_002818215.1, total: 7417, tp: 6500, fn: 215
+all in: 6500, all out: 215, ips_nodia: 512, dia_noips: 190
+sensitivity: 0.96798213
+ass: GCA_015148605.1, total: 45536, tp: 25206, fn: 7137
+all in: 25206, all out: 7137, ips_nodia: 9347, dia_noips: 3846
+sensitivity: 0.77933401
+ass: GCA_002005505.1, total: 27725, tp: 15264, fn: 5260
+all in: 15264, all out: 5260, ips_nodia: 6485, dia_noips: 716
+sensitivity: 0.74371468
+ass: GCA_015144975.1, total: 24583, tp: 16320, fn: 2502
+all in: 16320, all out: 2502, ips_nodia: 3838, dia_noips: 1923
+sensitivity: 0.86707045
+ass: GCA_003709365.1, total: 9366, tp: 8887, fn: 2
+all in: 8887, all out: 2, ips_nodia: 6, dia_noips: 471
+sensitivity: 0.99977500
+ass: GCA_000812005.1, total: 10994, tp: 9257, fn: 479
+all in: 9257, all out: 479, ips_nodia: 829, dia_noips: 429
+sensitivity: 0.95080115
+ass: GCA_000240725.1, total: 12541, tp: 11500, fn: 59
+all in: 11500, all out: 59, ips_nodia: 123, dia_noips: 859
+sensitivity: 0.99489575
+ass: GCA_002335675.1, total: 15965, tp: 13992, fn: 198
+all in: 13992, all out: 198, ips_nodia: 180, dia_noips: 1595
+sensitivity: 0.98604651
+ass: GCA_900660405.1, total: 15049, tp: 13300, fn: 214
+all in: 13300, all out: 214, ips_nodia: 394, dia_noips: 1141
+sensitivity: 0.98416457
+ass: GCA_914767515.1, total: 912, tp: 710, fn: 27
+all in: 710, all out: 27, ips_nodia: 78, dia_noips: 97
+sensitivity: 0.96336499
+ass: GCA_003612995.1, total: 6916, tp: 5462, fn: 356
+all in: 5462, all out: 356, ips_nodia: 934, dia_noips: 164
+sensitivity: 0.93881059
+ass: GCA_013389655.1, total: 22631, tp: 20315, fn: 227
+all in: 20315, all out: 227, ips_nodia: 569, dia_noips: 1520
+sensitivity: 0.98894947
+ass: GCA_019044685.2, total: 10016, tp: 9412, fn: 7
+all in: 9412, all out: 7, ips_nodia: 9, dia_noips: 588
+sensitivity: 0.99925682
+ass: GCA_001614215.1, total: 11524, tp: 10510, fn: 51
+all in: 10510, all out: 51, ips_nodia: 41, dia_noips: 922
+sensitivity: 0.99517091
+ass: GCA_003297045.1, total: 101664, tp: 49587, fn: 18814
+all in: 49587, all out: 18814, ips_nodia: 17649, dia_noips: 15614
+sensitivity: 0.72494554
+ass: GCA_016906385.1, total: 5830, tp: 5374, fn: 109
+all in: 5374, all out: 109, ips_nodia: 188, dia_noips: 159
+sensitivity: 0.98012037
+ass: GCA_011316045.1, total: 8333, tp: 7197, fn: 283
+all in: 7197, all out: 283, ips_nodia: 599, dia_noips: 254
+sensitivity: 0.96216578
+ass: GCA_008690995.1, total: 9506, tp: 8551, fn: 62
+all in: 8551, all out: 62, ips_nodia: 46, dia_noips: 847
+sensitivity: 0.99280158
+ass: GCA_008119945.1, total: 8140, tp: 7048, fn: 298
+all in: 7048, all out: 298, ips_nodia: 587, dia_noips: 207
+sensitivity: 0.95943371
+ass: GCA_000507305.1, total: 91599, tp: 41220, fn: 18508
+all in: 41220, all out: 18508, ips_nodia: 17023, dia_noips: 14848
+sensitivity: 0.69012858
+ass: GCA_015143705.1, total: 33455, tp: 30561, fn: 767
+all in: 30561, all out: 767, ips_nodia: 607, dia_noips: 1520
+sensitivity: 0.97551711
+ass: GCA_900128745.1, total: 6115, tp: 5464, fn: 112
+all in: 5464, all out: 112, ips_nodia: 187, dia_noips: 352
+sensitivity: 0.97991392
+ass: GCA_000350225.2, total: 26308, tp: 18715, fn: 1416
+all in: 18715, all out: 1416, ips_nodia: 4488, dia_noips: 1689
+sensitivity: 0.92966072
+ass: GCA_016834595.1, total: 19992, tp: 18488, fn: 86
+all in: 18488, all out: 86, ips_nodia: 293, dia_noips: 1125
+sensitivity: 0.99536987
+ass: GCA_004335755.1, total: 26616, tp: 23555, fn: 167
+all in: 23555, all out: 167, ips_nodia: 237, dia_noips: 2657
+sensitivity: 0.99296012
+ass: GCA_001704855.1, total: 3136, tp: 2622, fn: 67
+all in: 2622, all out: 67, ips_nodia: 36, dia_noips: 411
+sensitivity: 0.97508367
+ass: GCA_004335865.1, total: 25421, tp: 20814, fn: 895
+all in: 20814, all out: 895, ips_nodia: 1540, dia_noips: 2172
+sensitivity: 0.95877286
+ass: GCA_000150955.2, total: 12061, tp: 10636, fn: 61
+all in: 10636, all out: 61, ips_nodia: 137, dia_noips: 1227
+sensitivity: 0.99429747
+ass: GCA_905221635.1, total: 104293, tp: 67340, fn: 6032
+all in: 67340, all out: 6032, ips_nodia: 4157, dia_noips: 26764
+sensitivity: 0.91778880
+ass: GCA_003297005.1, total: 112585, tp: 72690, fn: 5854
+all in: 72690, all out: 5854, ips_nodia: 5190, dia_noips: 28851
+sensitivity: 0.92546853
+ass: GCA_004335555.1, total: 7160, tp: 6088, fn: 239
+all in: 6088, all out: 239, ips_nodia: 527, dia_noips: 306
+sensitivity: 0.96222538
+ass: GCA_004335615.1, total: 8868, tp: 7490, fn: 316
+all in: 7490, all out: 316, ips_nodia: 842, dia_noips: 220
+sensitivity: 0.95951832
+ass: GCA_000092065.1, total: 9732, tp: 9092, fn: 12
+all in: 9092, all out: 12, ips_nodia: 15, dia_noips: 613
+sensitivity: 0.99868190
+ass: GCA_000978595.1, total: 38895, tp: 23606, fn: 3916
+all in: 23606, all out: 3916, ips_nodia: 7817, dia_noips: 3556
+sensitivity: 0.85771383
+ass: GCA_019693395.1, total: 14344, tp: 12981, fn: 184
+all in: 12981, all out: 184, ips_nodia: 284, dia_noips: 895
+sensitivity: 0.98602355
+ass: GCA_011766145.1, total: 30533, tp: 24389, fn: 354
+all in: 24389, all out: 354, ips_nodia: 503, dia_noips: 5287
+sensitivity: 0.98569292
+ass: GCA_018397955.1, total: 14640, tp: 10931, fn: 824
+all in: 10931, all out: 824, ips_nodia: 2309, dia_noips: 576
+sensitivity: 0.92990217
+ass: GCA_003665715.1, total: 14278, tp: 11044, fn: 1707
+all in: 11044, all out: 1707, ips_nodia: 1099, dia_noips: 428
+sensitivity: 0.86612815
+ass: GCA_000320545.1, total: 24516, tp: 17003, fn: 2231
+all in: 17003, all out: 2231, ips_nodia: 4102, dia_noips: 1180
+sensitivity: 0.88400749
+ass: GCA_004335715.1, total: 26652, tp: 23487, fn: 190
+all in: 23487, all out: 190, ips_nodia: 248, dia_noips: 2727
+sensitivity: 0.99197533
+ass: GCA_004335455.1, total: 7941, tp: 6975, fn: 101
+all in: 6975, all out: 101, ips_nodia: 294, dia_noips: 571
+sensitivity: 0.98572640
+ass: GCA_002284615.2, total: 43238, tp: 20202, fn: 7522
+all in: 20202, all out: 7522, ips_nodia: 7748, dia_noips: 7766
+sensitivity: 0.72868273
+ass: GCA_018697155.1, total: 35322, tp: 18731, fn: 6414
+all in: 18731, all out: 6414, ips_nodia: 7412, dia_noips: 2765
+sensitivity: 0.74491947
+ass: GCA_003116995.1, total: 16841, tp: 14822, fn: 419
+all in: 14822, all out: 419, ips_nodia: 710, dia_noips: 890
+sensitivity: 0.97250837
+ass: GCA_007859695.1, total: 10594, tp: 9945, fn: 27
+all in: 9945, all out: 27, ips_nodia: 14, dia_noips: 608
+sensitivity: 0.99729242
+ass: GCA_012295225.1, total: 8999, tp: 8327, fn: 51
+all in: 8327, all out: 51, ips_nodia: 75, dia_noips: 546
+sensitivity: 0.99391263
+ass: GCA_015146095.1, total: 74995, tp: 50973, fn: 9416
+all in: 50973, all out: 9416, ips_nodia: 8254, dia_noips: 6352
+sensitivity: 0.84407756
+ass: GCA_001614245.1, total: 10925, tp: 10034, fn: 27
+all in: 10034, all out: 27, ips_nodia: 24, dia_noips: 840
+sensitivity: 0.99731637
+ass: GCA_009746045.1, total: 39858, tp: 16822, fn: 8283
+all in: 16822, all out: 8283, ips_nodia: 13443, dia_noips: 1310
+sensitivity: 0.67006572
+ass: GCA_000315625.1, total: 35879, tp: 29975, fn: 682
+all in: 29975, all out: 682, ips_nodia: 855, dia_noips: 4367
+sensitivity: 0.97775386
+ass: GCA_900108755.1, total: 22967, tp: 20909, fn: 24
+all in: 20909, all out: 24, ips_nodia: 118, dia_noips: 1916
+sensitivity: 0.99885348
+ass: GCA_003613005.1, total: 7818, tp: 5950, fn: 350
+all in: 5950, all out: 350, ips_nodia: 1310, dia_noips: 208
+sensitivity: 0.94444444
+ass: GCA_004138255.1, total: 7550, tp: 4747, fn: 725
+all in: 4747, all out: 725, ips_nodia: 1950, dia_noips: 128
+sensitivity: 0.86750731
+ass: GCA_905339685.1, total: 9983, tp: 9245, fn: 23
+all in: 9245, all out: 23, ips_nodia: 13, dia_noips: 702
+sensitivity: 0.99751834
+ass: GCA_006232395.1, total: 5847, tp: 5277, fn: 73
+all in: 5277, all out: 73, ips_nodia: 43, dia_noips: 454
+sensitivity: 0.98635514
+ass: GCA_000149405.2, total: 14283, tp: 12839, fn: 102
+all in: 12839, all out: 102, ips_nodia: 273, dia_noips: 1069
+sensitivity: 0.99211807
+ass: GCA_007449985.2, total: 17265, tp: 14170, fn: 620
+all in: 14170, all out: 620, ips_nodia: 1656, dia_noips: 819
+sensitivity: 0.95807978
+ass: GCA_004335835.1, total: 19524, tp: 17797, fn: 50
+all in: 17797, all out: 50, ips_nodia: 136, dia_noips: 1541
+sensitivity: 0.99719841
+ass: GCA_010909725.1, total: 15660, tp: 13335, fn: 590
+all in: 13335, all out: 590, ips_nodia: 1290, dia_noips: 445
+sensitivity: 0.95763016
+ass: GCA_004335645.1, total: 13458, tp: 11534, fn: 327
+all in: 11534, all out: 327, ips_nodia: 1009, dia_noips: 588
+sensitivity: 0.97243066
+ass: GCA_001662405.1, total: 25667, tp: 22322, fn: 279
+all in: 22322, all out: 279, ips_nodia: 430, dia_noips: 2636
+sensitivity: 0.98765541
+ass: GCA_900538255.1, total: 8291, tp: 5326, fn: 819
+all in: 5326, all out: 819, ips_nodia: 1962, dia_noips: 184
+sensitivity: 0.86672091
+ass: GCA_014621415.1, total: 32395, tp: 26986, fn: 937
+all in: 26986, all out: 937, ips_nodia: 1761, dia_noips: 2711
+sensitivity: 0.96644343
+ass: GCA_002245815.2, total: 13601, tp: 12634, fn: 35
+all in: 12634, all out: 35, ips_nodia: 30, dia_noips: 902
+sensitivity: 0.99723735
+ass: GCA_902809745.2, total: 20844, tp: 18205, fn: 250
+all in: 18205, all out: 250, ips_nodia: 471, dia_noips: 1918
+sensitivity: 0.98645354
+ass: GCA_013372465.1, total: 12232, tp: 10053, fn: 301
+all in: 10053, all out: 301, ips_nodia: 1123, dia_noips: 755
+sensitivity: 0.97092911
+ass: GCA_006384855.1, total: 28625, tp: 20986, fn: 2375
+all in: 20986, all out: 2375, ips_nodia: 3399, dia_noips: 1865
+sensitivity: 0.89833483
+ass: GCA_013416795.1, total: 11212, tp: 8763, fn: 610
+all in: 8763, all out: 610, ips_nodia: 1550, dia_noips: 289
+sensitivity: 0.93491945
+ass: GCA_019693495.1, total: 7610, tp: 6837, fn: 168
+all in: 6837, all out: 168, ips_nodia: 391, dia_noips: 214
+sensitivity: 0.97601713
+ass: GCA_015712045.1, total: 19294, tp: 17705, fn: 331
+all in: 17705, all out: 331, ips_nodia: 342, dia_noips: 916
+sensitivity: 0.98164782
+ass: GCA_004335405.1, total: 9239, tp: 8200, fn: 170
+all in: 8200, all out: 170, ips_nodia: 249, dia_noips: 620
+sensitivity: 0.97968937
+ass: GCA_003255715.1, total: 12537, tp: 11102, fn: 339
+all in: 11102, all out: 339, ips_nodia: 571, dia_noips: 525
+sensitivity: 0.97036972
+ass: GCA_002220235.1, total: 9854, tp: 9401, fn: 28
+all in: 9401, all out: 28, ips_nodia: 60, dia_noips: 365
+sensitivity: 0.99703044
+ass: GCA_004764655.1, total: 29849, tp: 24193, fn: 672
+all in: 24193, all out: 672, ips_nodia: 1888, dia_noips: 3096
+sensitivity: 0.97297406
+ass: GCA_009103225.1, total: 18042, tp: 11648, fn: 2454
+all in: 11648, all out: 2454, ips_nodia: 3372, dia_noips: 568
+sensitivity: 0.82598213
+ass: GCA_000091205.1, total: 4767, tp: 4497, fn: 32
+all in: 4497, all out: 32, ips_nodia: 22, dia_noips: 216
+sensitivity: 0.99293442
